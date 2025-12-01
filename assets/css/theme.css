@@ -256,6 +256,7 @@ body {
     width: 100%;
     max-width: 1200px;
     position: relative;
+    margin: 0 auto;
 }
 
 .app-logo {
@@ -314,26 +315,26 @@ body {
     left: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(139, 92, 246, 0.1);
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    background: transparent;
+    border: 2px solid rgba(139, 92, 246, 0.2);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-secondary);
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
     z-index: 10;
-    padding: 0;
 }
 
 .btn-back:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+    background: rgba(139, 92, 246, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-50%) scale(1.05);
 }
 
 .btn-back:active {
@@ -359,7 +360,7 @@ body:has(.event-details-page) .bottom-nav {
     padding-left: 3.5rem;
 }
 
-/* Ensure back button is positioned correctly */
+/* Ensure back button doesn't break layout */
 .top-app-bar {
     position: relative;
 }
@@ -509,7 +510,7 @@ body:has(.event-details-page) .bottom-nav {
 
 /* Dashboard Container */
 .dashboard-container {
-    padding-top: 56px; /* Top bar height */
+    padding-top: 56px; /* Top bar height - needed for fixed header */
     padding-bottom: 80px; /* Bottom nav height + padding */
     min-height: 100vh;
     animation: fadeIn 0.4s ease-in;
@@ -525,7 +526,7 @@ body:has(.event-details-page) .bottom-nav {
 }
 
 .dashboard-content {
-    padding: 1.25rem;
+    padding: 1rem 1.25rem; /* Reduced top padding */
     max-width: 1200px;
     margin: 0 auto;
 }
