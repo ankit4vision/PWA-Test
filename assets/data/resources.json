@@ -1,0 +1,241 @@
+{
+  "generalResources": [
+    {
+      "id": 1,
+      "title": "Staff Handbook",
+      "url": "https://onebeat.com/resources/staff-handbook",
+      "icon": "book",
+      "description": "Complete staff handbook and guidelines"
+    },
+    {
+      "id": 2,
+      "title": "Event Schedule Template",
+      "url": "https://onebeat.com/resources/schedule-template",
+      "icon": "calendar-event",
+      "description": "Standard event schedule template"
+    },
+    {
+      "id": 3,
+      "title": "Emergency Procedures",
+      "url": "https://onebeat.com/resources/emergency-procedures",
+      "icon": "exclamation-triangle",
+      "description": "Emergency contact and procedures guide"
+    },
+    {
+      "id": 4,
+      "title": "Travel Policy",
+      "url": "https://onebeat.com/resources/travel-policy",
+      "icon": "airplane",
+      "description": "Company travel policy and guidelines"
+    }
+  ],
+  "departmentResources": {
+    "director": [
+      {
+        "id": 101,
+        "title": "Director Resources",
+        "category": "Director",
+        "url": "https://onebeat.com/resources/director",
+        "icon": "person-badge",
+        "description": "Director-specific resources and tools"
+      },
+      {
+        "id": 102,
+        "title": "Faculty Resources",
+        "category": "Faculty",
+        "url": "https://onebeat.com/resources/faculty",
+        "icon": "people",
+        "description": "Faculty resources and materials"
+      },
+      {
+        "id": 103,
+        "title": "Scorekeeper Resources",
+        "category": "Scorekeeper",
+        "url": "https://onebeat.com/resources/scorekeeper",
+        "icon": "calculator",
+        "description": "Scorekeeping tools and guides"
+      },
+      {
+        "id": 104,
+        "title": "Tabulator Resources",
+        "category": "Tabulator",
+        "url": "https://onebeat.com/resources/tabulator",
+        "icon": "table",
+        "description": "Tabulator software and guides"
+      },
+      {
+        "id": 105,
+        "title": "Videographer Resources",
+        "category": "Videographer",
+        "url": "https://onebeat.com/resources/videographer",
+        "icon": "camera-video",
+        "description": "Video equipment and editing guides"
+      },
+      {
+        "id": 106,
+        "title": "Photographer Resources",
+        "category": "Photographer",
+        "url": "https://onebeat.com/resources/photographer",
+        "icon": "camera",
+        "description": "Photography equipment and guidelines"
+      },
+      {
+        "id": 107,
+        "title": "CP Resources",
+        "category": "Content Producer",
+        "url": "https://onebeat.com/resources/content-producer",
+        "icon": "film",
+        "description": "Content production tools and resources"
+      },
+      {
+        "id": 108,
+        "title": "Backstage Resources",
+        "category": "Backstage",
+        "url": "https://onebeat.com/resources/backstage",
+        "icon": "theater",
+        "description": "Backstage operations manual"
+      },
+      {
+        "id": 109,
+        "title": "Merch Resources",
+        "category": "Merch",
+        "url": "https://onebeat.com/resources/merch",
+        "icon": "bag",
+        "description": "Merchandise inventory and sales guides"
+      },
+      {
+        "id": 110,
+        "title": "Audio Resources",
+        "category": "Audio",
+        "url": "https://onebeat.com/resources/audio",
+        "icon": "speaker",
+        "description": "Audio equipment setup and operation"
+      },
+      {
+        "id": 111,
+        "title": "Awards Coordinator Resources",
+        "category": "Awards",
+        "url": "https://onebeat.com/resources/awards",
+        "icon": "trophy",
+        "description": "Awards coordination guides"
+      }
+    ],
+    "judge": [
+      {
+        "id": 102,
+        "title": "Faculty Resources",
+        "category": "Faculty",
+        "url": "https://onebeat.com/resources/faculty",
+        "icon": "people",
+        "description": "Faculty resources and materials"
+      }
+    ],
+    "videographer": [
+      {
+        "id": 105,
+        "title": "Videographer Resources",
+        "category": "Videographer",
+        "url": "https://onebeat.com/resources/videographer",
+        "icon": "camera-video",
+        "description": "Video equipment and editing guides"
+      }
+    ],
+    "photographer": [
+      {
+        "id": 106,
+        "title": "Photographer Resources",
+        "category": "Photographer",
+        "url": "https://onebeat.com/resources/photographer",
+        "icon": "camera",
+        "description": "Photography equipment and guidelines"
+      }
+    ],
+    "content-producer": [
+      {
+        "id": 105,
+        "title": "Videographer Resources",
+        "category": "Videographer",
+        "url": "https://onebeat.com/resources/videographer",
+        "icon": "camera-video",
+        "description": "Video equipment and editing guides"
+      },
+      {
+        "id": 106,
+        "title": "Photographer Resources",
+        "category": "Photographer",
+        "url": "https://onebeat.com/resources/photographer",
+        "icon": "camera",
+        "description": "Photography equipment and guidelines"
+      },
+      {
+        "id": 107,
+        "title": "CP Resources",
+        "category": "Content Producer",
+        "url": "https://onebeat.com/resources/content-producer",
+        "icon": "film",
+        "description": "Content production tools and resources"
+      }
+    ],
+    "scorekeeper": [
+      {
+        "id": 103,
+        "title": "Scorekeeper Resources",
+        "category": "Scorekeeper",
+        "url": "https://onebeat.com/resources/scorekeeper",
+        "icon": "calculator",
+        "description": "Scorekeeping tools and guides"
+      }
+    ],
+    "tabulator": [
+      {
+        "id": 104,
+        "title": "Tabulator Resources",
+        "category": "Tabulator",
+        "url": "https://onebeat.com/resources/tabulator",
+        "icon": "table",
+        "description": "Tabulator software and guides"
+      }
+    ],
+    "backstage": [
+      {
+        "id": 108,
+        "title": "Backstage Resources",
+        "category": "Backstage",
+        "url": "https://onebeat.com/resources/backstage",
+        "icon": "theater",
+        "description": "Backstage operations manual"
+      }
+    ],
+    "merch": [
+      {
+        "id": 109,
+        "title": "Merch Resources",
+        "category": "Merch",
+        "url": "https://onebeat.com/resources/merch",
+        "icon": "bag",
+        "description": "Merchandise inventory and sales guides"
+      }
+    ],
+    "audio-tech": [
+      {
+        "id": 110,
+        "title": "Audio Resources",
+        "category": "Audio",
+        "url": "https://onebeat.com/resources/audio",
+        "icon": "speaker",
+        "description": "Audio equipment setup and operation"
+      }
+    ],
+    "awards-coordinator": [
+      {
+        "id": 111,
+        "title": "Awards Coordinator Resources",
+        "category": "Awards",
+        "url": "https://onebeat.com/resources/awards",
+        "icon": "trophy",
+        "description": "Awards coordination guides"
+      }
+    ]
+  }
+}
+

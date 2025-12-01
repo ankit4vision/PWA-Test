@@ -1,0 +1,172 @@
+{
+  "crewSheets": [
+    {
+      "eventId": 1,
+      "crewMembers": [
+        {
+          "userId": 1,
+          "profilePicture": "https://via.placeholder.com/150",
+          "legalName": "Sarah Johnson",
+          "roles": ["Senior Director", "Director"],
+          "phone": "+1-555-0123",
+          "dietaryRestrictions": "Vegetarian"
+        },
+        {
+          "userId": 2,
+          "profilePicture": "https://via.placeholder.com/150",
+          "legalName": "Michael Chen",
+          "roles": ["Head Judge", "Master Class Teacher"],
+          "phone": "+1-555-0124",
+          "dietaryRestrictions": "Gluten-free"
+        },
+        {
+          "userId": 3,
+          "profilePicture": "https://via.placeholder.com/150",
+          "legalName": "Emily Rodriguez",
+          "roles": ["Videographer"],
+          "phone": "+1-555-0125",
+          "dietaryRestrictions": null
+        },
+        {
+          "userId": 4,
+          "profilePicture": "https://via.placeholder.com/150",
+          "legalName": "David Kim",
+          "roles": ["Merch"],
+          "phone": "+1-555-0126",
+          "dietaryRestrictions": "Vegan"
+        }
+      ]
+    }
+  ],
+  "roomingLists": [
+    {
+      "eventId": 1,
+      "rooms": [
+        {
+          "roomNumber": "2045",
+          "roomStyle": "Double Queen",
+          "roommate1": {
+            "userId": 1,
+            "name": "Sarah Johnson",
+            "phone": "+1-555-0123"
+          },
+          "roommate2": {
+            "userId": 2,
+            "name": "Michael Chen",
+            "phone": "+1-555-0124"
+          }
+        },
+        {
+          "roomNumber": "3012",
+          "roomStyle": "Single King",
+          "roommate1": {
+            "userId": 3,
+            "name": "Emily Rodriguez",
+            "phone": "+1-555-0125"
+          },
+          "roommate2": null
+        },
+        {
+          "roomNumber": "2048",
+          "roomStyle": "Double Queen",
+          "roommate1": {
+            "userId": 4,
+            "name": "David Kim",
+            "phone": "+1-555-0126"
+          },
+          "roommate2": null
+        }
+      ]
+    }
+  ],
+  "directorsNotes": [
+    {
+      "eventId": 1,
+      "content": "<h3>Important Reminders</h3><ul><li>Load-in begins at 8:00 AM sharp</li><li>All staff must attend mandatory briefing at 9:00 AM</li><li>Emergency contact: Travel Hotline</li><li>Special dietary accommodations have been arranged</li></ul><h3>Event Highlights</h3><p>This is a major regional championship. Expect high attendance and media coverage. All staff should be in professional attire.</p>"
+    }
+  ],
+  "eventRegistrations": [
+    {
+      "eventId": 1,
+      "studios": [
+        {
+          "studioId": 1,
+          "studioName": "Elite Dance Academy",
+          "eventBalance": 2500.00,
+          "ownerDirectorName": "Jennifer Smith",
+          "telephoneNumber": "+1-555-1001",
+          "totalRegisteredEntries": 45,
+          "totalRegisteredDancers": 32,
+          "registeredEventsForSeason": [
+            {
+              "eventName": "Groove Regional Championship - Las Vegas",
+              "eventDate": "2025-02-15"
+            },
+            {
+              "eventName": "Reverb Nationals - Orlando",
+              "eventDate": "2025-03-20"
+            }
+          ],
+          "paymentPortalLink": "https://onebeat.com/payment/studio/1/event/1"
+        },
+        {
+          "studioId": 2,
+          "studioName": "Stars Dance Studio",
+          "eventBalance": 0.00,
+          "ownerDirectorName": "Robert Williams",
+          "telephoneNumber": "+1-555-1002",
+          "totalRegisteredEntries": 28,
+          "totalRegisteredDancers": 20,
+          "registeredEventsForSeason": [
+            {
+              "eventName": "Groove Regional Championship - Las Vegas",
+              "eventDate": "2025-02-15"
+            }
+          ],
+          "paymentPortalLink": "https://onebeat.com/payment/studio/2/event/1"
+        },
+        {
+          "studioId": 3,
+          "studioName": "Premier Performance Center",
+          "eventBalance": -500.00,
+          "ownerDirectorName": "Maria Garcia",
+          "telephoneNumber": "+1-555-1003",
+          "totalRegisteredEntries": 60,
+          "totalRegisteredDancers": 45,
+          "registeredEventsForSeason": [
+            {
+              "eventName": "Groove Regional Championship - Las Vegas",
+              "eventDate": "2025-02-15"
+            },
+            {
+              "eventName": "Reverb Nationals - Orlando",
+              "eventDate": "2025-03-20"
+            },
+            {
+              "eventName": "Beyond The Stars - New York",
+              "eventDate": "2025-04-10"
+            }
+          ],
+          "paymentPortalLink": "https://onebeat.com/payment/studio/3/event/1"
+        },
+        {
+          "studioId": 4,
+          "studioName": "Dance Excellence Academy",
+          "eventBalance": 1800.00,
+          "ownerDirectorName": "James Anderson",
+          "telephoneNumber": "+1-555-1004",
+          "totalRegisteredEntries": 35,
+          "totalRegisteredDancers": 25,
+          "registeredEventsForSeason": [
+            {
+              "eventName": "Groove Regional Championship - Las Vegas",
+              "eventDate": "2025-02-15"
+            }
+          ],
+          "paymentPortalLink": "https://onebeat.com/payment/studio/4/event/1"
+        }
+      ]
+    }
+  ]
+}
+

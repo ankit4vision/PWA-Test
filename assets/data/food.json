@@ -1,0 +1,44 @@
+{
+  "foodMenus": [
+    {
+      "eventId": 1,
+      "foodNotes": {
+        "published": true,
+        "content": "<h3>Meal Schedule</h3><p><strong>Breakfast:</strong> 7:00 AM - 9:00 AM<br><strong>Lunch:</strong> 12:00 PM - 2:00 PM<br><strong>Dinner:</strong> 6:00 PM - 8:00 PM</p><p>All meals will be served in the main dining area. Vegetarian and vegan options available.</p>",
+        "menuUrl": "https://onebeat.com/menus/groove-las-vegas-2025"
+      },
+      "directorFoodNotes": {
+        "published": true,
+        "content": "<h3>Director's Lounge Menu</h3><p>Special catering available in the Director's Lounge from 8:00 AM - 10:00 PM. Includes premium coffee, snacks, and light meals.</p>",
+        "menuUrl": "https://onebeat.com/menus/directors-lounge-las-vegas-2025"
+      }
+    },
+    {
+      "eventId": 2,
+      "foodNotes": {
+        "published": false,
+        "content": null,
+        "menuUrl": null
+      },
+      "directorFoodNotes": {
+        "published": false,
+        "content": null,
+        "menuUrl": null
+      }
+    },
+    {
+      "eventId": 3,
+      "foodNotes": {
+        "published": true,
+        "content": "<h3>Meal Schedule</h3><p><strong>Breakfast:</strong> 6:30 AM - 9:00 AM<br><strong>Lunch:</strong> 12:00 PM - 2:00 PM<br><strong>Dinner:</strong> 6:00 PM - 8:00 PM</p>",
+        "menuUrl": "https://onebeat.com/menus/bts-ny-2025"
+      },
+      "directorFoodNotes": {
+        "published": true,
+        "content": "<h3>Director's Lounge Menu</h3><p>Available in Director's Lounge.</p>",
+        "menuUrl": "https://onebeat.com/menus/directors-lounge-ny-2025"
+      }
+    }
+  ]
+}
+

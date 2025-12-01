@@ -1,0 +1,121 @@
+{
+  "travelArrangements": [
+    {
+      "userId": 1,
+      "eventId": 1,
+      "travelTypes": ["Flight"],
+      "flight": {
+        "confirmationNumber": "DL7289ABC",
+        "airline": "Delta",
+        "departureAirport": "JFK",
+        "arrivalAirport": "LAS",
+        "departureTime": "2025-02-14T14:30:00",
+        "arrivalTime": "2025-02-14T17:45:00",
+        "hasConnection": true,
+        "connectionFlight": {
+          "departureAirport": "ATL",
+          "arrivalAirport": "LAS",
+          "departureTime": "2025-02-14T18:30:00",
+          "arrivalTime": "2025-02-14T20:15:00"
+        },
+        "specialNotes": "Please arrive 2 hours early. Check-in at Delta counter. For assistance, visit: https://delta.com/help"
+      },
+      "driving": null,
+      "train": null,
+      "uber": null,
+      "bus": null,
+      "rentalCar": null
+    },
+    {
+      "userId": 1,
+      "eventId": 2,
+      "travelTypes": ["Driving"],
+      "flight": null,
+      "driving": {
+        "carType": "7 Seater",
+        "carpoolPassengers": [
+          {"name": "Michael Chen", "phone": "+1-555-0124"},
+          {"name": "Emily Rodriguez", "phone": "+1-555-0125"}
+        ],
+        "meetingLocation": "OneBeat Headquarters, 123 Main St, New York, NY",
+        "plannedStops": [
+          {
+            "stopNumber": 1,
+            "location": "Rest Area - Exit 45, I-95",
+            "estimatedTime": "2025-03-19T10:00:00"
+          },
+          {
+            "stopNumber": 2,
+            "location": "Gas Station - Exit 120, I-95",
+            "estimatedTime": "2025-03-19T13:30:00"
+          }
+        ],
+        "specialNotes": "Departure time: 6:00 AM sharp. Please bring snacks and water."
+      },
+      "train": null,
+      "uber": null,
+      "bus": null,
+      "rentalCar": null
+    },
+    {
+      "userId": 2,
+      "eventId": 1,
+      "travelTypes": ["Flight"],
+      "flight": {
+        "confirmationNumber": "UA4567XYZ",
+        "airline": "United",
+        "departureAirport": "LAX",
+        "arrivalAirport": "LAS",
+        "departureTime": "2025-02-14T10:00:00",
+        "arrivalTime": "2025-02-14T11:30:00",
+        "hasConnection": false,
+        "connectionFlight": null,
+        "specialNotes": "Direct flight. Early morning departure."
+      },
+      "driving": null,
+      "train": null,
+      "uber": null,
+      "bus": null,
+      "rentalCar": null
+    },
+    {
+      "userId": 3,
+      "eventId": 1,
+      "travelTypes": ["Rental Car"],
+      "flight": null,
+      "driving": null,
+      "train": null,
+      "uber": null,
+      "bus": null,
+      "rentalCar": {
+        "carType": "5 Seater",
+        "rentalCompany": "Enterprise",
+        "confirmationNumber": "ENT789456",
+        "carpoolPassengers": [],
+        "meetingLocation": "Enterprise Rent-A-Car, Las Vegas Airport",
+        "plannedStops": [],
+        "specialNotes": "Pick up at airport. Return same location."
+      }
+    },
+    {
+      "userId": 4,
+      "eventId": 1,
+      "travelTypes": ["Train"],
+      "flight": null,
+      "driving": null,
+      "train": {
+        "confirmationNumber": "AMT123456",
+        "trainLine": "Amtrak",
+        "departureStation": "Union Station, Los Angeles",
+        "arrivalStation": "Las Vegas Station",
+        "departureTime": "2025-02-14T08:00:00",
+        "arrivalTime": "2025-02-14T13:30:00",
+        "specialNotes": "Business class seat. Meals included."
+      },
+      "uber": null,
+      "bus": null,
+      "rentalCar": null
+    }
+  ]
+}
+

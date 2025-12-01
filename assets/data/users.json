@@ -1,0 +1,77 @@
+{
+  "currentUser": {
+    "id": 1,
+    "email": "director@onebeat.com",
+    "firstName": "Sarah",
+    "lastName": "Johnson",
+    "phone": "+1-555-0123",
+    "profilePicture": "https://via.placeholder.com/150",
+    "accountTypes": ["Director"],
+    "roles": ["Senior Director", "Director"],
+    "dietaryRestrictions": "Vegetarian",
+    "assignedEvents": [1, 2, 3, 4]
+  },
+  "users": [
+    {
+      "id": 1,
+      "email": "director@onebeat.com",
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "phone": "+1-555-0123",
+      "profilePicture": "https://via.placeholder.com/150",
+      "accountTypes": ["Director"],
+      "roles": ["Senior Director", "Director"],
+      "dietaryRestrictions": "Vegetarian",
+      "assignedEvents": [1, 2, 3, 4]
+    },
+    {
+      "id": 2,
+      "email": "judge@onebeat.com",
+      "firstName": "Michael",
+      "lastName": "Chen",
+      "phone": "+1-555-0124",
+      "profilePicture": "https://via.placeholder.com/150",
+      "accountTypes": ["Judge"],
+      "roles": ["Head Judge", "Master Class Teacher"],
+      "dietaryRestrictions": "Gluten-free",
+      "assignedEvents": [1, 2]
+    },
+    {
+      "id": 3,
+      "email": "videographer@onebeat.com",
+      "firstName": "Emily",
+      "lastName": "Rodriguez",
+      "phone": "+1-555-0125",
+      "profilePicture": "https://via.placeholder.com/150",
+      "accountTypes": ["Tour Team"],
+      "roles": ["Videographer"],
+      "dietaryRestrictions": null,
+      "assignedEvents": [1, 3]
+    },
+    {
+      "id": 4,
+      "email": "merch@onebeat.com",
+      "firstName": "David",
+      "lastName": "Kim",
+      "phone": "+1-555-0126",
+      "profilePicture": "https://via.placeholder.com/150",
+      "accountTypes": ["Tour Team"],
+      "roles": ["Merch"],
+      "dietaryRestrictions": "Vegan",
+      "assignedEvents": [1, 2, 3]
+    },
+    {
+      "id": 5,
+      "email": "multirole@onebeat.com",
+      "firstName": "Jessica",
+      "lastName": "Martinez",
+      "phone": "+1-555-0127",
+      "profilePicture": "https://via.placeholder.com/150",
+      "accountTypes": ["Director", "Judge"],
+      "roles": ["Director", "Judge"],
+      "dietaryRestrictions": null,
+      "assignedEvents": [1, 2]
+    }
+  ]
+}
+

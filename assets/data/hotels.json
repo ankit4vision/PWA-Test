@@ -1,0 +1,77 @@
+{
+  "hotelAssignments": [
+    {
+      "userId": 1,
+      "eventId": 1,
+      "hotelName": "The Venetian Resort",
+      "hotelAddress": "3355 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "hotelPhone": "+1-702-414-1000",
+      "breakfastHours": "6:00 AM - 10:00 AM",
+      "roomType": "Double Queen",
+      "roomNumber": "2045",
+      "roommates": [
+        {
+          "userId": 2,
+          "name": "Michael Chen",
+          "phone": "+1-555-0124"
+        }
+      ],
+      "estimatedTravelTimeToVenue": "15 minutes"
+    },
+    {
+      "userId": 2,
+      "eventId": 1,
+      "hotelName": "The Venetian Resort",
+      "hotelAddress": "3355 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "hotelPhone": "+1-702-414-1000",
+      "breakfastHours": "6:00 AM - 10:00 AM",
+      "roomType": "Double Queen",
+      "roomNumber": "2045",
+      "roommates": [
+        {
+          "userId": 1,
+          "name": "Sarah Johnson",
+          "phone": "+1-555-0123"
+        }
+      ],
+      "estimatedTravelTimeToVenue": "15 minutes"
+    },
+    {
+      "userId": 3,
+      "eventId": 1,
+      "hotelName": "The Venetian Resort",
+      "hotelAddress": "3355 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "hotelPhone": "+1-702-414-1000",
+      "breakfastHours": "6:00 AM - 10:00 AM",
+      "roomType": "Single King",
+      "roomNumber": "3012",
+      "roommates": [],
+      "estimatedTravelTimeToVenue": "15 minutes"
+    },
+    {
+      "userId": 4,
+      "eventId": 1,
+      "hotelName": "The Venetian Resort",
+      "hotelAddress": "3355 Las Vegas Blvd S, Las Vegas, NV 89109",
+      "hotelPhone": "+1-702-414-1000",
+      "breakfastHours": "6:00 AM - 10:00 AM",
+      "roomType": "Double Queen",
+      "roomNumber": "2048",
+      "roommates": [],
+      "estimatedTravelTimeToVenue": "15 minutes"
+    },
+    {
+      "userId": 1,
+      "eventId": 2,
+      "hotelName": "Walt Disney World Swan",
+      "hotelAddress": "1200 Epcot Resorts Blvd, Lake Buena Vista, FL 32830",
+      "hotelPhone": "+1-407-934-3000",
+      "breakfastHours": "7:00 AM - 11:00 AM",
+      "roomType": "Single King",
+      "roomNumber": "512",
+      "roommates": [],
+      "estimatedTravelTimeToVenue": "20 minutes"
+    }
+  ]
+}
+

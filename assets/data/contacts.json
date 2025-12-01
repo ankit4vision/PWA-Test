@@ -1,0 +1,83 @@
+{
+  "generalContacts": [
+    {
+      "id": 1,
+      "name": "Travel Hotline",
+      "type": "phone",
+      "value": "+1-555-TRAVEL",
+      "phoneNumber": "+1555872835",
+      "icon": "telephone-fill",
+      "description": "24/7 travel assistance hotline",
+      "isProminent": true,
+      "warningMessage": "SMS and Carrier rates may apply.",
+      "accessPermissions": ["Director", "Judge", "Tour Team"]
+    },
+    {
+      "id": 2,
+      "name": "Email Helpdesk",
+      "type": "email",
+      "value": "dreamteam@onebeatdance.com",
+      "email": "dreamteam@onebeatdance.com",
+      "icon": "envelope-fill",
+      "description": "General support and assistance",
+      "isProminent": false,
+      "warningMessage": null,
+      "accessPermissions": ["Director", "Judge", "Tour Team"]
+    },
+    {
+      "id": 3,
+      "name": "Judge's Email Helpdesk",
+      "type": "email",
+      "value": "judges@onebeatdance.com",
+      "email": "judges@onebeatdance.com",
+      "icon": "envelope-fill",
+      "description": "Judge-specific support",
+      "isProminent": false,
+      "warningMessage": null,
+      "accessPermissions": ["Judge"]
+    }
+  ],
+  "directorContacts": [
+    {
+      "id": 101,
+      "name": "C-Suite On-Call",
+      "type": "phone",
+      "value": "+1-555-CSUITE",
+      "phoneNumber": "+1555274883",
+      "icon": "telephone-fill",
+      "description": "Executive leadership on-call support",
+      "accessPermissions": ["Director"]
+    },
+    {
+      "id": 102,
+      "name": "BTS/BR On-Call",
+      "type": "phone",
+      "value": "+1-555-BTSBR",
+      "phoneNumber": "+1555287272",
+      "icon": "telephone-fill",
+      "description": "Beyond The Stars / Breakout on-call support",
+      "accessPermissions": ["Director"]
+    },
+    {
+      "id": 103,
+      "name": "GR/RV Director On-Call",
+      "type": "phone",
+      "value": "+1-555-GRRV",
+      "phoneNumber": "+1555477878",
+      "icon": "telephone-fill",
+      "description": "Groove / Reverb Director on-call support",
+      "accessPermissions": ["Director"]
+    },
+    {
+      "id": 104,
+      "name": "Media Director On-Call",
+      "type": "phone",
+      "value": "+1-555-MEDIA",
+      "phoneNumber": "+1555633422",
+      "icon": "telephone-fill",
+      "description": "Media and content director support",
+      "accessPermissions": ["Director"]
+    }
+  ]
+}
+

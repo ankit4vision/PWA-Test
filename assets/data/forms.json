@@ -1,0 +1,130 @@
+{
+  "generalForms": [
+    {
+      "id": 1,
+      "title": "Broken/Missing Items Form",
+      "url": "https://onebeat.com/forms/broken-items",
+      "icon": "exclamation-circle",
+      "description": "Report broken or missing equipment"
+    },
+    {
+      "id": 2,
+      "title": "Travel Opt-Out Form",
+      "url": "https://onebeat.com/forms/travel-opt-out",
+      "icon": "x-circle",
+      "description": "Opt out of provided travel arrangements"
+    },
+    {
+      "id": 3,
+      "title": "Ideas Form",
+      "url": "https://onebeat.com/forms/ideas",
+      "icon": "lightbulb",
+      "description": "Submit ideas and suggestions"
+    }
+  ],
+  "departmentForms": {
+    "director": [
+      {
+        "id": 201,
+        "title": "Director Forms",
+        "category": "Director",
+        "url": "https://onebeat.com/forms/director",
+        "icon": "person-badge",
+        "description": "Director-specific forms"
+      },
+      {
+        "id": 202,
+        "title": "Scorekeeper/Tabulator Forms",
+        "category": "Scorekeeper/Tabulator",
+        "url": "https://onebeat.com/forms/scorekeeper-tabulator",
+        "icon": "calculator",
+        "description": "Scorekeeping and tabulation forms"
+      },
+      {
+        "id": 203,
+        "title": "CP Forms",
+        "category": "Content Producer",
+        "url": "https://onebeat.com/forms/content-producer",
+        "icon": "film",
+        "description": "Content producer forms"
+      },
+      {
+        "id": 204,
+        "title": "Backstage Forms",
+        "category": "Backstage",
+        "url": "https://onebeat.com/forms/backstage",
+        "icon": "theater",
+        "description": "Backstage operations forms"
+      },
+      {
+        "id": 205,
+        "title": "Merch Forms",
+        "category": "Merch",
+        "url": "https://onebeat.com/forms/merch",
+        "icon": "bag",
+        "description": "Merchandise inventory and sales forms"
+      }
+    ],
+    "judge": [
+      {
+        "id": 206,
+        "title": "Faculty Forms",
+        "category": "Faculty",
+        "url": "https://onebeat.com/forms/faculty",
+        "icon": "people",
+        "description": "Faculty-specific forms"
+      }
+    ],
+    "scorekeeper": [
+      {
+        "id": 202,
+        "title": "Scorekeeper/Tabulator Forms",
+        "category": "Scorekeeper/Tabulator",
+        "url": "https://onebeat.com/forms/scorekeeper-tabulator",
+        "icon": "calculator",
+        "description": "Scorekeeping and tabulation forms"
+      }
+    ],
+    "tabulator": [
+      {
+        "id": 202,
+        "title": "Scorekeeper/Tabulator Forms",
+        "category": "Scorekeeper/Tabulator",
+        "url": "https://onebeat.com/forms/scorekeeper-tabulator",
+        "icon": "calculator",
+        "description": "Scorekeeping and tabulation forms"
+      }
+    ],
+    "content-producer": [
+      {
+        "id": 203,
+        "title": "CP Forms",
+        "category": "Content Producer",
+        "url": "https://onebeat.com/forms/content-producer",
+        "icon": "film",
+        "description": "Content producer forms"
+      }
+    ],
+    "backstage": [
+      {
+        "id": 204,
+        "title": "Backstage Forms",
+        "category": "Backstage",
+        "url": "https://onebeat.com/forms/backstage",
+        "icon": "theater",
+        "description": "Backstage operations forms"
+      }
+    ],
+    "merch": [
+      {
+        "id": 205,
+        "title": "Merch Forms",
+        "category": "Merch",
+        "url": "https://onebeat.com/forms/merch",
+        "icon": "bag",
+        "description": "Merchandise inventory and sales forms"
+      }
+    ]
+  }
+}
+
