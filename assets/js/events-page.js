@@ -201,40 +201,23 @@ class EventsPage {
                     Priority Event
                 </h5>
                 <div class="card event-card priority-event" data-event-id="${event.id}">
-                    <div class="card-body p-4">
-                        <div class="row align-items-start g-4">
-                            <div class="col-12 col-lg-8">
-                                <h4 class="card-title">${event.name}</h4>
-                                
-                                <div class="event-info-list">
-                                    <div class="event-info-item">
-                                        <i class="bi bi-calendar-event"></i>
-                                        <span><strong>Dates:</strong> ${startDate} - ${endDate}</span>
-                                    </div>
-                                    <div class="event-info-item">
-                                        <i class="bi bi-building"></i>
-                                        <span><strong>Venue:</strong> ${event.venueName}</span>
-                                    </div>
-                                    <div class="event-info-item">
-                                        <i class="bi bi-geo-alt-fill"></i>
-                                        <span><strong>Location:</strong> ${event.city}, ${event.state}</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="d-flex flex-wrap gap-2 align-items-center mt-3">
-                                    ${this.renderTravelStatus(event)}
-                                    ${travelIcon ? `<span class="badge bg-light text-dark border"><i class="bi bi-${travelIcon}"></i> ${travelLabel}</span>` : ''}
-                                </div>
+                    <div class="card-body p-3">
+                        <h5 class="card-title mb-2">${event.name}</h5>
+                        <p class="text-muted mb-2 small">
+                            <i class="bi bi-calendar-event"></i> ${startDate} - ${endDate}
+                        </p>
+                        <p class="text-muted mb-2 small">
+                            <i class="bi bi-geo-alt"></i> ${event.venueName}
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between mt-3">
+                            <div class="d-flex flex-wrap gap-2 align-items-center">
+                                ${this.renderTravelStatus(event)}
+                                ${travelIcon ? `<span class="badge bg-light text-dark"><i class="bi bi-${travelIcon}"></i></span>` : ''}
                             </div>
-                            
-                            <div class="col-12 col-lg-4">
-                                <div class="d-flex justify-content-center justify-content-lg-end">
-                                    <div id="weather-${event.id}" class="weather-widget">
-                                        <i class="bi bi-sun-fill"></i>
-                                        <div class="weather-temp">72°F</div>
-                                        <div class="weather-city">${event.city}</div>
-                                    </div>
-                                </div>
+                            <div id="weather-${event.id}" class="weather-widget-small">
+                                <i class="bi bi-sun-fill"></i>
+                                <span class="weather-temp-small">72°F</span>
+                                <span class="weather-city-small">${event.city}</span>
                             </div>
                         </div>
                     </div>
