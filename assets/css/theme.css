@@ -748,6 +748,278 @@ body {
     }
 }
 
+/* Event Details Page Styles */
+.event-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item i {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    width: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.detail-item > div {
+    flex: 1;
+}
+
+.detail-item strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.detail-item span,
+.detail-item a {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.detail-item a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Team Member Cards */
+.team-member-card {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(139, 92, 246, 0.05);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    transition: all 0.3s ease;
+}
+
+.team-member-card:hover {
+    background: rgba(139, 92, 246, 0.1);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.team-member-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 0.75rem;
+    border: 3px solid var(--primary-color);
+    display: block;
+}
+
+.team-member-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.team-member-role {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Travel Arrangements */
+.travel-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.travel-type-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius-sm);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.travel-type-badge i {
+    font-size: 1.5rem;
+}
+
+.travel-section {
+    padding: 1.5rem;
+    background: rgba(139, 92, 246, 0.03);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    margin-bottom: 1rem;
+}
+
+/* Flight Details */
+.flight-details {
+    margin-top: 1rem;
+}
+
+.flight-leg {
+    padding: 1rem;
+    background: white;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.flight-leg-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.flight-leg-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.flight-airport {
+    flex: 1;
+    min-width: 150px;
+}
+
+.airport-code {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.airport-name {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.flight-time {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.flight-arrow {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.special-notes {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background: rgba(139, 92, 246, 0.05);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--primary-color);
+    line-height: 1.6;
+}
+
+.special-notes a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Hotel Information */
+.roommate-list {
+    margin-top: 0.5rem;
+}
+
+.roommate-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(139, 92, 246, 0.05);
+    border-radius: var(--border-radius-sm);
+    margin-bottom: 0.5rem;
+}
+
+.roommate-item i {
+    color: var(--primary-color);
+}
+
+/* Food & Catering */
+.food-section {
+    margin-bottom: 1.5rem;
+}
+
+.food-content {
+    padding: 1rem;
+    background: rgba(139, 92, 246, 0.03);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.food-content h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.food-content p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+/* Responsive Event Details */
+@media (max-width: 768px) {
+    .event-details-list {
+        gap: 1rem;
+    }
+    
+    .detail-item {
+        padding: 0.5rem 0;
+    }
+    
+    .detail-item i {
+        font-size: 1.1rem;
+        width: 20px;
+    }
+    
+    .flight-leg-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .flight-arrow {
+        transform: rotate(90deg);
+        margin: 0.5rem 0;
+    }
+    
+    .team-member-avatar {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .team-member-name {
+        font-size: 0.85rem;
+    }
+    
+    .team-member-role {
+        font-size: 0.75rem;
+    }
+}
+
 
 /* Season Filter */
 #seasonFilter {

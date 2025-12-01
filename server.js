@@ -23,8 +23,10 @@ const MIME_TYPES = {
 const server = http.createServer((req, res) => {
     console.log(`${req.method} ${req.url}`);
 
-    // Parse URL
-    let filePath = '.' + req.url;
+    // Parse URL and remove query parameters
+    let urlPath = req.url.split('?')[0]; // Remove query string
+    let filePath = '.' + urlPath;
+    
     if (filePath === './') {
         filePath = './index.html';
     }

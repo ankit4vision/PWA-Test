@@ -351,9 +351,22 @@ class EventsPage {
     attachEventHandlers() {
         document.querySelectorAll('.event-card').forEach(card => {
             card.addEventListener('click', (e) => {
+                // Prevent navigation if clicking on links or buttons
+                if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('a') || e.target.closest('button')) {
+                    return;
+                }
+                
                 const eventId = card.getAttribute('data-event-id');
                 if (eventId) {
-                    window.location.href = `event-details.html?id=${eventId}`;
+                    try {
+                        window.location.href = `event-details.html?id=${eventId}`;
+                    } catch (error) {
+                        console.error('Error navigating to event details:', error);
+                        // Fallback: try using window.location.assign
+                        window.location.assign(`event-details.html?id=${eventId}`);
+                    }
+                } else {
+                    console.warn('Event card clicked but no event ID found');
                 }
             });
         });
