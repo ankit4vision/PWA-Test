@@ -233,7 +233,7 @@ class EventsPage {
         let html = `
             <div class="mb-4">
                 <h5 class="mb-3">${title}</h5>
-                <div class="row g-3">
+                <div class="row g-2">
         `;
 
         // Render all event cards

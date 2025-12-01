@@ -176,6 +176,7 @@ const hasAccess = await dataService.hasAccess(userId, ['Director'], []);
 - **Multi-role Support**: Users can have multiple account types and roles
 - **Date Format**: ISO 8601 (YYYY-MM-DD or YYYY-MM-DDTHH:mm:ss)
 - **Event Status**: "upcoming", "past"
+- **Event Category** (for demo): "priority", "future", "past" - Used to simplify event filtering for demonstration purposes
 - **Travel Types**: Flight, Driving, Train, Uber, Bus, Rental Car
 - **Balance Colors**: 
   - > $0: RED (owes money)
