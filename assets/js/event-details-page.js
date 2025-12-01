@@ -17,23 +17,13 @@ document.addEventListener('DOMContentLoaded', async function() {
             return;
         }
 
-        // Load components
-        if (window.componentLoader) {
-            await window.componentLoader.loadComponents([
-                { name: 'header', target: '#header-container' },
-                { name: 'bottom-nav', target: '#bottom-nav-container' }
-            ]);
+        // Initialize logout button
+        if (typeof initLogout === 'function') {
+            initLogout();
         }
 
-        // Set active navigation item
-        if (typeof setActiveNavItem === 'function') {
-            setActiveNavItem('events');
-        }
-        
-        // Update page title
-        if (typeof updatePageTitle === 'function') {
-            updatePageTitle('Event Details');
-        }
+        // Initialize back button
+        initBackButton();
 
         // Initialize page
         initEventDetailsPage();
@@ -41,6 +31,19 @@ document.addEventListener('DOMContentLoaded', async function() {
         console.error('Error initializing event details page:', error);
     }
 });
+
+/**
+ * Initialize Back Button
+ */
+function initBackButton() {
+    const backBtn = document.getElementById('backBtn');
+    if (backBtn) {
+        backBtn.addEventListener('click', function() {
+            // Go back to events page
+            window.location.href = 'events.html';
+        });
+    }
+}
 
 /**
  * Initialize Event Details Page

@@ -255,6 +255,7 @@ body {
     gap: 0.75rem;
     width: 100%;
     max-width: 1200px;
+    position: relative;
 }
 
 .app-logo {
@@ -305,6 +306,62 @@ body {
 
 .btn-logout i {
     font-size: 1.25rem;
+}
+
+/* Back Button */
+.btn-back {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(139, 92, 246, 0.1);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    padding: 0;
+}
+
+.btn-back:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+.btn-back:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.btn-back i {
+    font-size: 1.25rem;
+}
+
+/* Event Details Page - Hide Bottom Nav */
+.event-details-page.dashboard-container {
+    padding-bottom: 1.5rem;
+}
+
+.event-details-page .bottom-nav,
+body:has(.event-details-page) .bottom-nav {
+    display: none !important;
+}
+
+/* Adjust top bar content when back button is present */
+.top-app-bar:has(.btn-back) .top-app-bar-content {
+    padding-left: 3.5rem;
+}
+
+/* Ensure back button is positioned correctly */
+.top-app-bar {
+    position: relative;
 }
 
 /* Bottom Navigation */
