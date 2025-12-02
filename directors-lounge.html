@@ -23,15 +23,542 @@
     <!-- Page Container -->
     <div class="dashboard-container event-details-page">
         <div class="dashboard-content-full">
-            <!-- Director's Lounge Container -->
-            <div id="directorsLoungeContainer">
-                <div class="text-center py-5">
-                    <div class="spinner-border text-primary-custom" role="status">
-                        <span class="visually-hidden">Loading Director's Lounge...</span>
-                    </div>
-                    <p class="mt-3 text-muted">Loading Director's Lounge...</p>
+            
+            <!-- Event Header -->
+            <div class="event-header-card mb-3">
+                <h1 class="event-title">Groove Regional Championship - Las Vegas</h1>
+                <div class="event-header-meta">
+                    <span class="event-date">
+                        <i class="bi bi-calendar-event"></i>
+                        Feb 15-17, 2025
+                    </span>
+                    <span class="event-location">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Las Vegas, NV
+                    </span>
                 </div>
             </div>
+
+            <!-- Section 1: Crew Sheet -->
+            <div class="card-full accordion-item">
+                <div class="card-header-full accordion-header" data-bs-toggle="collapse" data-bs-target="#crewSheet" aria-expanded="true">
+                    <h4 class="mb-0">
+                        <i class="bi bi-people-fill me-2"></i>
+                        Crew Sheet
+                    </h4>
+                    <i class="bi bi-chevron-down accordion-icon"></i>
+                </div>
+                <div id="crewSheet" class="collapse show accordion-collapse">
+                    <div class="card-body-full">
+                        <div class="crew-sheet-list">
+                            <!-- Crew Member 1 -->
+                            <div class="crew-member-item">
+                                <div class="crew-member-avatar">
+                                    <img src="assets/img/team1.jpeg" alt="Sarah Johnson" class="crew-avatar-img">
+                                </div>
+                                <div class="crew-member-details">
+                                    <div class="crew-member-name">Sarah Johnson</div>
+                                    <div class="crew-member-role">
+                                        <i class="bi bi-briefcase"></i>
+                                        Senior Director, Director
+                                    </div>
+                                    <div class="crew-member-phone">
+                                        <i class="bi bi-telephone"></i>
+                                        <a href="tel:+15550123" class="text-decoration-none">+1-555-0123</a>
+                                    </div>
+                                    <div class="crew-member-dietary">
+                                        <i class="bi bi-heart"></i>
+                                        <span class="text-muted">Dietary: Vegetarian</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Crew Member 2 -->
+                            <div class="crew-member-item">
+                                <div class="crew-member-avatar">
+                                    <img src="assets/img/team2.png" alt="Michael Chen" class="crew-avatar-img">
+                                </div>
+                                <div class="crew-member-details">
+                                    <div class="crew-member-name">Michael Chen</div>
+                                    <div class="crew-member-role">
+                                        <i class="bi bi-briefcase"></i>
+                                        Head Judge, Master Class Teacher
+                                    </div>
+                                    <div class="crew-member-phone">
+                                        <i class="bi bi-telephone"></i>
+                                        <a href="tel:+15550124" class="text-decoration-none">+1-555-0124</a>
+                                    </div>
+                                    <div class="crew-member-dietary">
+                                        <i class="bi bi-heart"></i>
+                                        <span class="text-muted">Dietary: Gluten-free</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Crew Member 3 -->
+                            <div class="crew-member-item">
+                                <div class="crew-member-avatar">
+                                    <img src="assets/img/team3.png" alt="Emily Rodriguez" class="crew-avatar-img">
+                                </div>
+                                <div class="crew-member-details">
+                                    <div class="crew-member-name">Emily Rodriguez</div>
+                                    <div class="crew-member-role">
+                                        <i class="bi bi-briefcase"></i>
+                                        Videographer
+                                    </div>
+                                    <div class="crew-member-phone">
+                                        <i class="bi bi-telephone"></i>
+                                        <a href="tel:+15550125" class="text-decoration-none">+1-555-0125</a>
+                                    </div>
+                                    <div class="crew-member-dietary">
+                                        <i class="bi bi-heart"></i>
+                                        <span class="text-muted">Dietary: None</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Crew Member 4 -->
+                            <div class="crew-member-item">
+                                <div class="crew-member-avatar">
+                                    <img src="assets/img/team1.jpeg" alt="David Kim" class="crew-avatar-img">
+                                </div>
+                                <div class="crew-member-details">
+                                    <div class="crew-member-name">David Kim</div>
+                                    <div class="crew-member-role">
+                                        <i class="bi bi-briefcase"></i>
+                                        Merch
+                                    </div>
+                                    <div class="crew-member-phone">
+                                        <i class="bi bi-telephone"></i>
+                                        <a href="tel:+15550126" class="text-decoration-none">+1-555-0126</a>
+                                    </div>
+                                    <div class="crew-member-dietary">
+                                        <i class="bi bi-heart"></i>
+                                        <span class="text-muted">Dietary: Vegan</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Rooming List -->
+            <div class="card-full accordion-item">
+                <div class="card-header-full accordion-header" data-bs-toggle="collapse" data-bs-target="#roomingList" aria-expanded="true">
+                    <h4 class="mb-0">
+                        <i class="bi bi-door-open me-2"></i>
+                        Rooming List
+                    </h4>
+                    <i class="bi bi-chevron-down accordion-icon"></i>
+                </div>
+                <div id="roomingList" class="collapse show accordion-collapse">
+                    <div class="card-body-full">
+                        <!-- Desktop Table View -->
+                        <div class="table-responsive d-none d-md-block">
+                            <table class="table table-hover rooming-table">
+                                <thead>
+                                    <tr>
+                                        <th>Room #</th>
+                                        <th>Room Style</th>
+                                        <th>Roommate #1</th>
+                                        <th>Roommate #1 Phone</th>
+                                        <th>Roommate #2</th>
+                                        <th>Roommate #2 Phone</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>2045</strong></td>
+                                        <td>Double Queen</td>
+                                        <td>Sarah Johnson</td>
+                                        <td><a href="tel:+15550123" class="text-decoration-none">+1-555-0123</a></td>
+                                        <td>Michael Chen</td>
+                                        <td><a href="tel:+15550124" class="text-decoration-none">+1-555-0124</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>3012</strong></td>
+                                        <td>Single King</td>
+                                        <td>Emily Rodriguez</td>
+                                        <td><a href="tel:+15550125" class="text-decoration-none">+1-555-0125</a></td>
+                                        <td>N/A</td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>2048</strong></td>
+                                        <td>Double Queen</td>
+                                        <td>David Kim</td>
+                                        <td><a href="tel:+15550126" class="text-decoration-none">+1-555-0126</a></td>
+                                        <td>N/A</td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Mobile Card View -->
+                        <div class="d-md-none rooming-mobile-list">
+                            <!-- Room 1 -->
+                            <div class="rooming-mobile-card">
+                                <div class="rooming-mobile-header">
+                                    <div>
+                                        <strong>Room 2045</strong>
+                                        <span class="badge bg-secondary ms-2">Double Queen</span>
+                                    </div>
+                                </div>
+                                <div class="rooming-mobile-body">
+                                    <div class="rooming-mobile-item">
+                                        <div class="rooming-mobile-label">Roommate #1:</div>
+                                        <div class="rooming-mobile-value">
+                                            Sarah Johnson<br>
+                                            <a href="tel:+15550123" class="text-decoration-none small"><i class="bi bi-telephone"></i> +1-555-0123</a>
+                                        </div>
+                                    </div>
+                                    <div class="rooming-mobile-item">
+                                        <div class="rooming-mobile-label">Roommate #2:</div>
+                                        <div class="rooming-mobile-value">
+                                            Michael Chen<br>
+                                            <a href="tel:+15550124" class="text-decoration-none small"><i class="bi bi-telephone"></i> +1-555-0124</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Room 2 -->
+                            <div class="rooming-mobile-card">
+                                <div class="rooming-mobile-header">
+                                    <div>
+                                        <strong>Room 3012</strong>
+                                        <span class="badge bg-secondary ms-2">Single King</span>
+                                    </div>
+                                </div>
+                                <div class="rooming-mobile-body">
+                                    <div class="rooming-mobile-item">
+                                        <div class="rooming-mobile-label">Roommate #1:</div>
+                                        <div class="rooming-mobile-value">
+                                            Emily Rodriguez<br>
+                                            <a href="tel:+15550125" class="text-decoration-none small"><i class="bi bi-telephone"></i> +1-555-0125</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Room 3 -->
+                            <div class="rooming-mobile-card">
+                                <div class="rooming-mobile-header">
+                                    <div>
+                                        <strong>Room 2048</strong>
+                                        <span class="badge bg-secondary ms-2">Double Queen</span>
+                                    </div>
+                                </div>
+                                <div class="rooming-mobile-body">
+                                    <div class="rooming-mobile-item">
+                                        <div class="rooming-mobile-label">Roommate #1:</div>
+                                        <div class="rooming-mobile-value">
+                                            David Kim<br>
+                                            <a href="tel:+15550126" class="text-decoration-none small"><i class="bi bi-telephone"></i> +1-555-0126</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Director's Notes -->
+            <div class="card-full accordion-item">
+                <div class="card-header-full accordion-header" data-bs-toggle="collapse" data-bs-target="#directorsNotes" aria-expanded="true">
+                    <h4 class="mb-0">
+                        <i class="bi bi-sticky-fill me-2"></i>
+                        Director's Notes
+                    </h4>
+                    <i class="bi bi-chevron-down accordion-icon"></i>
+                </div>
+                <div id="directorsNotes" class="collapse show accordion-collapse">
+                    <div class="card-body-full">
+                        <div class="directors-notes-content">
+                            <h3>Important Reminders</h3>
+                            <ul>
+                                <li>Load-in begins at 8:00 AM sharp</li>
+                                <li>All staff must attend mandatory briefing at 9:00 AM</li>
+                                <li>Emergency contact: Travel Hotline</li>
+                                <li>Special dietary accommodations have been arranged</li>
+                            </ul>
+                            <h3>Event Highlights</h3>
+                            <p>This is a major regional championship. Expect high attendance and media coverage. All staff should be in professional attire.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Event Registration -->
+            <div class="card-full accordion-item">
+                <div class="card-header-full accordion-header" data-bs-toggle="collapse" data-bs-target="#eventRegistration" aria-expanded="true">
+                    <h4 class="mb-0">
+                        <i class="bi bi-clipboard-check me-2"></i>
+                        Event Registration
+                    </h4>
+                    <i class="bi bi-chevron-down accordion-icon"></i>
+                </div>
+                <div id="eventRegistration" class="collapse show accordion-collapse">
+                    <div class="card-body-full">
+                        <div class="event-registration-list">
+                            <!-- Studio 1 - Owes Money (Red) -->
+                            <div class="studio-registration-item">
+                                <div class="studio-registration-header" data-bs-toggle="collapse" data-bs-target="#studio-1">
+                                    <div class="studio-registration-title">
+                                        <strong>Elite Dance Academy</strong>
+                                        <span class="studio-balance text-danger">$2500.00</span>
+                                    </div>
+                                    <i class="bi bi-chevron-down accordion-icon"></i>
+                                </div>
+                                <div id="studio-1" class="collapse studio-registration-details">
+                                    <div class="studio-registration-body">
+                                        <div class="detail-row">
+                                            <i class="bi bi-person"></i>
+                                            <div>
+                                                <strong>Owner/Director:</strong>
+                                                <span>Jennifer Smith</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-telephone"></i>
+                                            <div>
+                                                <strong>Telephone:</strong>
+                                                <a href="tel:+15551001" class="text-decoration-none">+1-555-1001</a>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-list-check"></i>
+                                            <div>
+                                                <strong>Total Registered Entries:</strong>
+                                                <span>45</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-people"></i>
+                                            <div>
+                                                <strong>Total Registered Dancers:</strong>
+                                                <span>32</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-calendar-event"></i>
+                                            <div>
+                                                <strong>Registered Events for Season:</strong>
+                                                <ul class="mb-0">
+                                                    <li>Groove Regional Championship - Las Vegas - Feb 15, 2025</li>
+                                                    <li>Reverb Nationals - Orlando - Mar 20, 2025</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-credit-card"></i>
+                                            <div>
+                                                <strong>Payment Portal:</strong>
+                                                <a href="https://onebeat.com/payment/studio/1/event/1" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                                    Make Payment
+                                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Studio 2 - Zero Balance (Default) -->
+                            <div class="studio-registration-item">
+                                <div class="studio-registration-header" data-bs-toggle="collapse" data-bs-target="#studio-2">
+                                    <div class="studio-registration-title">
+                                        <strong>Stars Dance Studio</strong>
+                                        <span class="studio-balance">$0.00</span>
+                                    </div>
+                                    <i class="bi bi-chevron-down accordion-icon"></i>
+                                </div>
+                                <div id="studio-2" class="collapse studio-registration-details">
+                                    <div class="studio-registration-body">
+                                        <div class="detail-row">
+                                            <i class="bi bi-person"></i>
+                                            <div>
+                                                <strong>Owner/Director:</strong>
+                                                <span>Robert Williams</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-telephone"></i>
+                                            <div>
+                                                <strong>Telephone:</strong>
+                                                <a href="tel:+15551002" class="text-decoration-none">+1-555-1002</a>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-list-check"></i>
+                                            <div>
+                                                <strong>Total Registered Entries:</strong>
+                                                <span>28</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-people"></i>
+                                            <div>
+                                                <strong>Total Registered Dancers:</strong>
+                                                <span>20</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-calendar-event"></i>
+                                            <div>
+                                                <strong>Registered Events for Season:</strong>
+                                                <ul class="mb-0">
+                                                    <li>Groove Regional Championship - Las Vegas - Feb 15, 2025</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-credit-card"></i>
+                                            <div>
+                                                <strong>Payment Portal:</strong>
+                                                <a href="https://onebeat.com/payment/studio/2/event/1" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                                    Make Payment
+                                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Studio 3 - Account Credit (Green) -->
+                            <div class="studio-registration-item">
+                                <div class="studio-registration-header" data-bs-toggle="collapse" data-bs-target="#studio-3">
+                                    <div class="studio-registration-title">
+                                        <strong>Premier Performance Center</strong>
+                                        <span class="studio-balance text-success">$500.00 Credit</span>
+                                    </div>
+                                    <i class="bi bi-chevron-down accordion-icon"></i>
+                                </div>
+                                <div id="studio-3" class="collapse studio-registration-details">
+                                    <div class="studio-registration-body">
+                                        <div class="detail-row">
+                                            <i class="bi bi-person"></i>
+                                            <div>
+                                                <strong>Owner/Director:</strong>
+                                                <span>Maria Garcia</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-telephone"></i>
+                                            <div>
+                                                <strong>Telephone:</strong>
+                                                <a href="tel:+15551003" class="text-decoration-none">+1-555-1003</a>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-list-check"></i>
+                                            <div>
+                                                <strong>Total Registered Entries:</strong>
+                                                <span>60</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-people"></i>
+                                            <div>
+                                                <strong>Total Registered Dancers:</strong>
+                                                <span>45</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-calendar-event"></i>
+                                            <div>
+                                                <strong>Registered Events for Season:</strong>
+                                                <ul class="mb-0">
+                                                    <li>Groove Regional Championship - Las Vegas - Feb 15, 2025</li>
+                                                    <li>Reverb Nationals - Orlando - Mar 20, 2025</li>
+                                                    <li>Beyond The Stars - New York - Apr 10, 2025</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-credit-card"></i>
+                                            <div>
+                                                <strong>Payment Portal:</strong>
+                                                <a href="https://onebeat.com/payment/studio/3/event/1" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                                    Make Payment
+                                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Studio 4 - Owes Money (Red) -->
+                            <div class="studio-registration-item">
+                                <div class="studio-registration-header" data-bs-toggle="collapse" data-bs-target="#studio-4">
+                                    <div class="studio-registration-title">
+                                        <strong>Dance Excellence Academy</strong>
+                                        <span class="studio-balance text-danger">$1800.00</span>
+                                    </div>
+                                    <i class="bi bi-chevron-down accordion-icon"></i>
+                                </div>
+                                <div id="studio-4" class="collapse studio-registration-details">
+                                    <div class="studio-registration-body">
+                                        <div class="detail-row">
+                                            <i class="bi bi-person"></i>
+                                            <div>
+                                                <strong>Owner/Director:</strong>
+                                                <span>James Anderson</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-telephone"></i>
+                                            <div>
+                                                <strong>Telephone:</strong>
+                                                <a href="tel:+15551004" class="text-decoration-none">+1-555-1004</a>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-list-check"></i>
+                                            <div>
+                                                <strong>Total Registered Entries:</strong>
+                                                <span>35</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-people"></i>
+                                            <div>
+                                                <strong>Total Registered Dancers:</strong>
+                                                <span>25</span>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-calendar-event"></i>
+                                            <div>
+                                                <strong>Registered Events for Season:</strong>
+                                                <ul class="mb-0">
+                                                    <li>Groove Regional Championship - Las Vegas - Feb 15, 2025</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="detail-row">
+                                            <i class="bi bi-credit-card"></i>
+                                            <div>
+                                                <strong>Payment Portal:</strong>
+                                                <a href="https://onebeat.com/payment/studio/4/event/1" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+                                                    Make Payment
+                                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     
@@ -41,17 +568,11 @@
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Data Service -->
-    <script src="assets/js/data-service.js"></script>
-    
     <!-- Component Loader -->
     <script src="assets/js/components.js"></script>
     
     <!-- Custom App JS -->
     <script src="assets/js/app.js"></script>
-    
-    <!-- Director's Lounge Page JS -->
-    <script src="assets/js/directors-lounge-page.js"></script>
     
     <script>
         document.addEventListener('DOMContentLoaded', async function() {
@@ -66,7 +587,57 @@
             
             setActiveNavItem('directors-lounge');
             updatePageTitle('Director\'s Lounge');
+            
+            // Initialize accordion functionality
+            initDirectorsLoungeAccordion();
         });
+
+        /**
+         * Initialize accordion functionality for Director's Lounge
+         */
+        function initDirectorsLoungeAccordion() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-bs-target');
+                    const target = document.querySelector(targetId);
+                    const icon = this.querySelector('.accordion-icon');
+                    
+                    if (target) {
+                        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                        this.setAttribute('aria-expanded', !isExpanded);
+                    }
+                });
+                
+                // Set initial state
+                const targetId = header.getAttribute('data-bs-target');
+                const target = document.querySelector(targetId);
+                if (target && target.classList.contains('show')) {
+                    header.setAttribute('aria-expanded', 'true');
+                } else {
+                    header.setAttribute('aria-expanded', 'false');
+                }
+            });
+            
+            // Listen for Bootstrap collapse events
+            const collapseElements = document.querySelectorAll('.accordion-collapse');
+            collapseElements.forEach(element => {
+                element.addEventListener('show.bs.collapse', function() {
+                    const header = document.querySelector(`[data-bs-target="#${this.id}"]`);
+                    if (header) {
+                        header.setAttribute('aria-expanded', 'true');
+                    }
+                });
+                
+                element.addEventListener('hide.bs.collapse', function() {
+                    const header = document.querySelector(`[data-bs-target="#${this.id}"]`);
+                    if (header) {
+                        header.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        }
     </script>
 </body>
 </html>
