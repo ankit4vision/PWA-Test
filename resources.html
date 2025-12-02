@@ -23,10 +23,14 @@
     <!-- Page Container -->
     <div class="dashboard-container">
         <div class="dashboard-content">
-            <div class="text-center py-5">
-                <i class="bi bi-folder-fill gradient-text" style="font-size: 4rem;"></i>
-                <h3 class="mt-3 text-muted">My Resources</h3>
-                <p class="text-muted">Your resources will be displayed here</p>
+            <!-- Resources Container -->
+            <div id="resourcesContainer">
+                <div class="text-center py-5">
+                    <div class="spinner-border text-primary-custom" role="status">
+                        <span class="visually-hidden">Loading resources...</span>
+                    </div>
+                    <p class="mt-3 text-muted">Loading your resources...</p>
+                </div>
             </div>
         </div>
     </div>
@@ -45,6 +49,9 @@
     
     <!-- Custom App JS -->
     <script src="assets/js/app.js"></script>
+    
+    <!-- Resources Page JS -->
+    <script src="assets/js/resources-page.js"></script>
     
     <script>
         document.addEventListener('DOMContentLoaded', async function() {

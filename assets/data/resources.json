@@ -118,6 +118,14 @@
         "url": "https://onebeat.com/resources/awards",
         "icon": "trophy",
         "description": "Awards coordination guides"
+      },
+      {
+        "id": 112,
+        "title": "DA Resources",
+        "category": "DA",
+        "url": "https://onebeat.com/resources/da",
+        "icon": "person-check",
+        "description": "Director Assistant resources and tools"
       }
     ],
     "judge": [
@@ -234,6 +242,16 @@
         "url": "https://onebeat.com/resources/awards",
         "icon": "trophy",
         "description": "Awards coordination guides"
+      }
+    ],
+    "da": [
+      {
+        "id": 112,
+        "title": "DA Resources",
+        "category": "DA",
+        "url": "https://onebeat.com/resources/da",
+        "icon": "person-check",
+        "description": "Director Assistant resources and tools"
       }
     ]
   }

@@ -248,11 +248,58 @@ class DataService {
             // Directors see all resources
             departmentResources = resourcesData.departmentResources.director || [];
         } else if (user.accountTypes.includes('Judge')) {
+            // Judges see ONLY Faculty Resources
             departmentResources = resourcesData.departmentResources.judge || [];
         } else if (user.accountTypes.includes('Tour Team')) {
-            // Tour Team sees resources for their specific role
-            const roleKey = user.roles[0]?.toLowerCase().replace(/\s+/g, '-');
-            departmentResources = resourcesData.departmentResources[roleKey] || [];
+            // Tour Team sees resources for their specific role(s)
+            // Check all roles and collect unique resources
+            const resourceSet = new Set();
+            const allResources = [];
+
+            // Map role names to resource keys
+            const roleToKeyMap = {
+                'Tabulator': 'tabulator',
+                'Score Keeper': 'scorekeeper',
+                'Event Coordinator': 'event-coordinator',
+                'Merch': 'merch',
+                'Audio Tech': 'audio-tech',
+                'Videographer': 'videographer',
+                'Photographer': 'photographer',
+                'Content Producer': 'content-producer',
+                'Backstage': 'backstage',
+                'Awards Coordinator': 'awards-coordinator',
+                'DA': 'da',
+                'Director Assistant': 'da'
+            };
+
+            // Process each role
+            user.roles.forEach(role => {
+                const roleKey = roleToKeyMap[role] || role.toLowerCase().replace(/\s+/g, '-');
+                const roleResources = resourcesData.departmentResources[roleKey] || [];
+                
+                roleResources.forEach(resource => {
+                    // Use resource ID to avoid duplicates
+                    if (!resourceSet.has(resource.id)) {
+                        resourceSet.add(resource.id);
+                        allResources.push(resource);
+                    }
+                });
+
+                // Special case: Content Producer also sees Photographer and Videographer resources
+                if (role === 'Content Producer' || roleKey === 'content-producer') {
+                    ['photographer', 'videographer'].forEach(additionalKey => {
+                        const additionalResources = resourcesData.departmentResources[additionalKey] || [];
+                        additionalResources.forEach(resource => {
+                            if (!resourceSet.has(resource.id)) {
+                                resourceSet.add(resource.id);
+                                allResources.push(resource);
+                            }
+                        });
+                    });
+                }
+            });
+
+            departmentResources = allResources;
         }
 
         return {

@@ -2252,3 +2252,124 @@ body:has(.event-details-page) .bottom-nav {
     }
 }
 
+/* ============================================
+   Resource Cards & Buttons
+   ============================================ */
+
+.resource-button {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.resource-card {
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    min-height: 180px;
+    background: var(--card-bg);
+}
+
+.resource-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-colored);
+    background: var(--card-bg-hover);
+}
+
+.resource-card:hover::before {
+    transform: scaleX(1);
+}
+
+.resource-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.resource-icon i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.resource-card:hover .resource-icon {
+    transform: scale(1.1);
+}
+
+.resource-card:hover .resource-icon i {
+    transform: scale(1.1);
+}
+
+.resource-card .card-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.resource-card:hover .card-title {
+    color: var(--primary-color);
+}
+
+.resource-card .card-text {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+/* Section Headers */
+h4.fw-bold {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+h4.fw-bold .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Section Separator */
+.border-top {
+    border-top: 2px solid rgba(139, 92, 246, 0.15) !important;
+}
+
+/* Responsive adjustments for resources */
+@media (min-width: 768px) {
+    .resource-card {
+        min-height: 200px;
+    }
+    
+    .resource-icon {
+        width: 72px;
+        height: 72px;
+    }
+    
+    .resource-icon i {
+        font-size: 2.25rem;
+    }
+}
+
