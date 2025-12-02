@@ -1681,7 +1681,7 @@ body:has(.event-details-page) .bottom-nav {
 }
 
 .card-full:hover {
-    background: var(--card-bg-hover);
+    background: var(--card-bg);
 }
 
 .card-header-full {
@@ -1697,7 +1697,7 @@ body:has(.event-details-page) .bottom-nav {
 }
 
 .card-header-full:hover {
-    background: rgba(139, 92, 246, 0.05);
+    background: var(--card-bg);
 }
 
 .card-header-full h4 {
