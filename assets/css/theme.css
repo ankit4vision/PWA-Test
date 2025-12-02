@@ -2373,3 +2373,102 @@ h4.fw-bold .gradient-text {
     }
 }
 
+/* Form Card Styles */
+.form-button {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-card {
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    min-height: 180px;
+    background: var(--card-bg);
+}
+
+.form-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-colored);
+    background: var(--card-bg-hover);
+}
+
+.form-card:hover::before {
+    transform: scaleX(1);
+}
+
+.form-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.form-icon i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.form-card:hover .form-icon {
+    transform: scale(1.1);
+}
+
+.form-card:hover .form-icon i {
+    transform: scale(1.1);
+}
+
+.form-card .card-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.form-card:hover .card-title {
+    color: var(--primary-color);
+}
+
+.form-card .card-text {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+/* Responsive adjustments for forms */
+@media (min-width: 768px) {
+    .form-card {
+        min-height: 200px;
+    }
+    
+    .form-icon {
+        width: 72px;
+        height: 72px;
+    }
+    
+    .form-icon i {
+        font-size: 2.25rem;
+    }
+}
+

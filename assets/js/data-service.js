@@ -324,12 +324,48 @@ class DataService {
 
         // Get department forms based on user roles
         if (user.accountTypes.includes('Director')) {
+            // Directors see ALL department forms
             departmentForms = formsData.departmentForms.director || [];
         } else if (user.accountTypes.includes('Judge')) {
+            // Judges see ONLY Faculty Forms
             departmentForms = formsData.departmentForms.judge || [];
         } else if (user.accountTypes.includes('Tour Team')) {
-            const roleKey = user.roles[0]?.toLowerCase().replace(/\s+/g, '-');
-            departmentForms = formsData.departmentForms[roleKey] || [];
+            // Tour Team sees forms for their specific role(s)
+            // Check all roles and collect unique forms
+            const formSet = new Set();
+            const allForms = [];
+
+            // Map role names to form keys
+            const roleToKeyMap = {
+                'Tabulator': 'tabulator',
+                'Score Keeper': 'scorekeeper',
+                'Event Coordinator': 'event-coordinator',
+                'Merch': 'merch',
+                'Audio Tech': 'audio-tech',
+                'Videographer': 'videographer',
+                'Photographer': 'photographer',
+                'Content Producer': 'content-producer',
+                'Backstage': 'backstage',
+                'Awards Coordinator': 'awards-coordinator',
+                'DA': 'da',
+                'Director Assistant': 'da'
+            };
+
+            // Process each role
+            user.roles.forEach(role => {
+                const roleKey = roleToKeyMap[role] || role.toLowerCase().replace(/\s+/g, '-');
+                const roleForms = formsData.departmentForms[roleKey] || [];
+                
+                roleForms.forEach(form => {
+                    // Use form ID to avoid duplicates
+                    if (!formSet.has(form.id)) {
+                        formSet.add(form.id);
+                        allForms.push(form);
+                    }
+                });
+            });
+
+            departmentForms = allForms;
         }
 
         return {
