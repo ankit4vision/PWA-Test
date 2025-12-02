@@ -73,9 +73,46 @@ A mobile-first web application for OneBeat staff members to manage events, trave
   - Smooth animations and hover effects
   - Clean white background maintained
 
+### Phase 3: Module 2 - My Resources
+- ✅ **General Resources Section** - Implemented with:
+  - Header: "General Resources" with icon
+  - Card-based resource display with icons
+  - All users (Director, Judge, Tour Team) have access
+  - Opens resources in new tab
+- ✅ **Department Resources Section** - Implemented with:
+  - Header: "Department Resources" with icon
+  - Role-based resource filtering:
+    - Director: Sees ALL department resources
+    - Judge: Sees ONLY Faculty Resources
+    - Tour Team: Sees ONLY their specific role resources
+  - Content Producer special case: Also sees Photographer/Videographer resources
+  - Multiple role support: Collects resources from all user roles
+- ✅ **Resource Categories** - All implemented with icons:
+  - Director Resources
+  - Faculty Resources
+  - Scorekeeper Resources
+  - Tabulator Resources
+  - Videographer Resources
+  - CP Resources (with Photographer/Videographer access)
+  - Photographer Resources
+  - Backstage Resources
+  - Merch Resources
+  - DA Resources
+  - Audio Resources
+  - Awards Coordinator Resources
+- ✅ **Resource Card Design** - Completed:
+  - Clickable card design (entire card is clickable)
+  - Icon display with hover effects
+  - Title and description
+  - Opens URL in new tab
+  - Responsive grid layout (1 column mobile, 2 tablet, 3 desktop)
+  - Section separator between General and Department resources
+  - Optimized spacing between cards
+
 ### Next Steps
 - ✅ **Event Details Page** - Completed with full functionality and enhanced UI
-- ⏭️ **Module 2: My Resources** - Resource links and department resources
+- ✅ **Module 2: My Resources** - Completed with role-based filtering and card design
+- ⏭️ **Module 3: My Forms** - Form links and department forms
 
 ---
 
@@ -284,20 +321,23 @@ A mobile-first web application for OneBeat staff members to manage events, trave
 ## 🎯 Phase 3: Module 2 - My Resources
 
 ### 3.1 General Resources Section
-- [ ] **Header: "General Resources"**
-- [ ] **Resource Display**
-  - Button-style links with icons
+- [x] **Header: "General Resources"** ✅
+- [x] **Resource Display** ✅
+  - Card-based links with icons
   - Mirrors OneBeat Registration dashboard widgets
   - Access: Director, Judge, Tour Team
+  - Opens resources in new tab
 
 ### 3.2 Department Resources Section
-- [ ] **Header: "Department Resources"**
-- [ ] **Role-Based Resource Display**
+- [x] **Header: "Department Resources"** ✅
+- [x] **Role-Based Resource Display** ✅
   - Director: See ALL department resources
   - Judge: See ONLY Faculty Resources
   - Tour Team: See ONLY their specific role resources
+  - Content Producer: Also sees Photographer/Videographer resources
+  - Multiple role support: Collects resources from all user roles
   
-- [ ] **Resource Categories** (with icons)
+- [x] **Resource Categories** (with icons) ✅
   - Director Resources
   - Faculty Resources
   - Scorekeeper Resources
@@ -311,10 +351,13 @@ A mobile-first web application for OneBeat staff members to manage events, trave
   - Audio Resources
   - Awards Coordinator Resources
 
-- [ ] **Resource Button Design**
-  - Icon + label
-  - Opens URL in app (iframe or new tab)
-  - Ghost page styling
+- [x] **Resource Card Design** ✅
+  - Clickable card design (entire card is clickable)
+  - Icon + title + description
+  - Opens URL in new tab
+  - Responsive grid layout
+  - Section separator between General and Department resources
+  - Optimized spacing
 
 ---
 
