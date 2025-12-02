@@ -3,7 +3,7 @@
     {
       "userId": 1,
       "eventId": 1,
-      "travelTypes": ["Flight"],
+      "travelTypes": ["Flight", "Driving"],
       "flight": {
         "confirmationNumber": "DL7289ABC",
         "airline": "Delta",
@@ -20,7 +20,27 @@
         },
         "specialNotes": "Please arrive 2 hours early. Check-in at Delta counter. For assistance, visit: https://delta.com/help"
       },
-      "driving": null,
+      "driving": {
+        "carType": "7 Seater",
+        "carpoolPassengers": [
+          {"name": "Michael Chen", "phone": "+1-555-0124"},
+          {"name": "Emily Rodriguez", "phone": "+1-555-0125"}
+        ],
+        "meetingLocation": "Las Vegas Airport - Rental Car Pickup Area",
+        "plannedStops": [
+          {
+            "stopNumber": 1,
+            "location": "Gas Station - Exit 42, I-15",
+            "estimatedTime": "2025-02-14T20:45:00"
+          },
+          {
+            "stopNumber": 2,
+            "location": "Rest Area - Exit 68, I-15",
+            "estimatedTime": "2025-02-14T22:00:00"
+          }
+        ],
+        "specialNotes": "Pick up rental car at airport after flight arrival. Drive to venue together. Departure from airport: 8:30 PM. For questions, contact: https://onebeat.com/travel-help"
+      },
       "train": null,
       "uber": null,
       "bus": null,
@@ -112,6 +132,41 @@
         "arrivalTime": "2025-02-14T13:30:00",
         "specialNotes": "Business class seat. Meals included."
       },
+      "uber": null,
+      "bus": null,
+      "rentalCar": null
+    },
+    {
+      "userId": 1,
+      "eventId": 3,
+      "travelTypes": ["Flight", "Driving"],
+      "flight": {
+        "confirmationNumber": "AA9876XYZ",
+        "airline": "American Airlines",
+        "departureAirport": "JFK",
+        "arrivalAirport": "MIA",
+        "departureTime": "2025-04-10T08:00:00",
+        "arrivalTime": "2025-04-10T11:30:00",
+        "hasConnection": false,
+        "connectionFlight": null,
+        "specialNotes": "Flight to Miami, then drive to event location."
+      },
+      "driving": {
+        "carType": "7 Seater",
+        "carpoolPassengers": [
+          {"name": "John Smith", "phone": "+1-555-0200"}
+        ],
+        "meetingLocation": "Miami Airport - Rental Car Pickup",
+        "plannedStops": [
+          {
+            "stopNumber": 1,
+            "location": "Rest Stop - Exit 25, I-95",
+            "estimatedTime": "2025-04-10T14:00:00"
+          }
+        ],
+        "specialNotes": "Pick up rental car at airport, then drive to venue."
+      },
+      "train": null,
       "uber": null,
       "bus": null,
       "rentalCar": null

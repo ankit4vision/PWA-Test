@@ -1939,6 +1939,87 @@ body:has(.event-details-page) .bottom-nav {
     gap: 0.5rem;
 }
 
+/* Travel Types Container */
+.travel-types-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.travel-type-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.travel-type-heading:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+.travel-type-section {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(139, 92, 246, 0.08);
+}
+
+.travel-type-section:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* Passenger List */
+.passenger-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.passenger-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background: rgba(139, 92, 246, 0.05);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.9rem;
+}
+
+.passenger-item a {
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.passenger-item a:hover {
+    text-decoration: underline;
+}
+
+/* Stops List */
+.stops-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.stop-item {
+    padding: 0.5rem;
+    background: rgba(139, 92, 246, 0.05);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.stop-item strong {
+    color: var(--primary-color);
+}
+
 /* Food Section Compact */
 .food-section-compact {
     margin-bottom: 1rem;
