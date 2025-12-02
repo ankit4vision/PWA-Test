@@ -2554,3 +2554,161 @@ h4.fw-bold .gradient-text {
     z-index: 1040;
 }
 
+/* Contact Page Styles */
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-item {
+    width: 100%;
+}
+
+.contact-button {
+    display: block;
+    width: 100%;
+    background: white;
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contact-button:hover {
+    background: var(--card-bg-hover);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(139, 92, 246, 0.15);
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.contact-button:active {
+    transform: translateY(0);
+}
+
+.contact-button-prominent {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+    border: 2px solid;
+    border-image: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%) 1;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+}
+
+.contact-button-prominent:hover {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(236, 72, 153, 0.15) 100%);
+    box-shadow: 0 6px 16px rgba(139, 92, 246, 0.25);
+}
+
+.contact-button-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-button-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    width: 32px;
+    text-align: center;
+}
+
+.contact-button-prominent .contact-button-icon {
+    font-size: 1.75rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact-button-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-button-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.contact-button-prominent .contact-button-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact-button-description {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.contact-button-arrow {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover .contact-button-arrow {
+    transform: translateX(4px);
+    color: var(--primary-color);
+}
+
+.contact-warning {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 3px solid #ffc107;
+    border-radius: 0.375rem;
+    margin-left: 0.5rem;
+}
+
+.contact-warning i {
+    color: #ffc107;
+    font-size: 0.875rem;
+}
+
+.contact-warning small {
+    font-size: 0.8125rem;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments for contact buttons */
+@media (min-width: 768px) {
+    .contact-button {
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .contact-button-name {
+        font-size: 1.125rem;
+    }
+    
+    .contact-button-prominent .contact-button-name {
+        font-size: 1.25rem;
+    }
+    
+    .contact-button-description {
+        font-size: 0.9375rem;
+    }
+    
+    .contact-button-icon {
+        font-size: 1.75rem;
+        width: 36px;
+    }
+    
+    .contact-button-prominent .contact-button-icon {
+        font-size: 2rem;
+    }
+}
+

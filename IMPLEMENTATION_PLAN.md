@@ -139,11 +139,42 @@ A mobile-first web application for OneBeat staff members to manage events, trave
   - Section separator between General and Department forms
   - Responsive design (mobile and tablet optimized)
 
+### Phase 5: Module 4 - Contact Us
+- ✅ **General Contact Information Section** - Implemented with:
+  - Header: "Contact Us" with icon
+  - Travel Hotline (prominent/standout):
+    - Special gradient border and background styling
+    - Phone button (opens native dialer via tel:)
+    - Warning message: "SMS and Carrier rates may apply"
+  - Email Helpdesk:
+    - Email button (opens native mail app via mailto:dreamteam@onebeatdance.com)
+  - Judge's Email Helpdesk:
+    - Email button (opens native mail app via mailto:judges@onebeatdance.com)
+    - Conditional display based on role (Judge only)
+- ✅ **Director's Contact Information Section** - Implemented with:
+  - Header: "On-Call Support" with icon (Director only)
+  - Contact buttons:
+    - C-Suite On-Call
+    - BTS/BR On-Call
+    - GR/RV Director On-Call
+    - Media Director On-Call
+  - All director contacts open native phone dialer via tel:
+- ✅ **Contact Button Design** - Completed:
+  - Clickable button design with hover effects
+  - Prominent styling for Travel Hotline with gradient border
+  - Icon display (phone/email) with proper styling
+  - Title and description
+  - Warning message display for Travel Hotline
+  - Native app integration (tel: and mailto:)
+  - Responsive design (mobile and tablet optimized)
+  - Role-based visibility (Judge contacts only for Judges, Director contacts only for Directors)
+
 ### Next Steps
 - ✅ **Event Details Page** - Completed with full functionality and enhanced UI
 - ✅ **Module 2: My Resources** - Completed with role-based filtering and card design
 - ✅ **Module 3: My Forms** - Completed with role-based filtering, vertical list view, and modal integration
-- ⏭️ **Module 4: Contact Us** - Contact information with role-based visibility
+- ✅ **Module 4: Contact Us** - Completed with role-based visibility, native phone/email integration, and prominent Travel Hotline styling
+- ⏭️ **Module 5: Director's Lounge** - Director-only page with Crew Sheet, Rooming List, Director's Notes, and Event Registration
 
 ---
 
@@ -440,30 +471,33 @@ A mobile-first web application for OneBeat staff members to manage events, trave
 ## 🎯 Phase 5: Module 4 - Contact Us
 
 ### 5.1 General Contact Information
-- [ ] **Header: "Contact Us"**
-- [ ] **Contact Buttons**
-  - [ ] **Travel Hotline** (prominent/standout)
+- [x] **Header: "Contact Us"** ✅
+- [x] **Contact Buttons** ✅
+  - [x] **Travel Hotline** (prominent/standout) ✅
     - Phone button (opens native dialer)
     - Warning message: "SMS and Carrier rates may apply"
+    - Special gradient border and background styling
     
-  - [ ] **Email Helpdesk**
+  - [x] **Email Helpdesk** ✅
     - Email button (opens native mail app)
     - mailto:dreamteam@onebeatdance.com
     
-  - [ ] **Judge's Email Helpdesk** (Judge only)
+  - [x] **Judge's Email Helpdesk** (Judge only) ✅
     - Email button (opens native mail app)
     - mailto:judges@onebeatdance.com
     - Conditional display based on role
 
 ### 5.2 Director's Contact Information
-- [ ] **Header: "On-Call Support"** (Director only)
-- [ ] **Contact Buttons**
+- [x] **Header: "On-Call Support"** (Director only) ✅
+- [x] **Contact Buttons** ✅
   - C-Suite On-Call
   - BTS/BR On-Call
   - GR/RV Director On-Call
   - Media Director On-Call
-- [ ] **Phone/Email Integration**
+- [x] **Phone/Email Integration** ✅
   - Native app integration (tel:, mailto:)
+  - Opens native phone dialer for phone contacts
+  - Opens native mail app for email contacts
 
 ---
 

@@ -23,10 +23,14 @@
     <!-- Page Container -->
     <div class="dashboard-container">
         <div class="dashboard-content">
-            <div class="text-center py-5">
-                <i class="bi bi-telephone-fill gradient-text" style="font-size: 4rem;"></i>
-                <h3 class="mt-3 text-muted">Contact Us</h3>
-                <p class="text-muted">Contact information will be displayed here</p>
+            <!-- Contacts Container -->
+            <div id="contactsContainer">
+                <div class="text-center py-5">
+                    <div class="spinner-border text-primary-custom" role="status">
+                        <span class="visually-hidden">Loading contacts...</span>
+                    </div>
+                    <p class="mt-3 text-muted">Loading your contacts...</p>
+                </div>
             </div>
         </div>
     </div>
@@ -46,6 +50,9 @@
     <!-- Custom App JS -->
     <script src="assets/js/app.js"></script>
     
+    <!-- Contact Page JS -->
+    <script src="assets/js/contact-page.js"></script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', async function() {
             await componentLoader.loadComponents([
@@ -63,4 +70,3 @@
     </script>
 </body>
 </html>
-
