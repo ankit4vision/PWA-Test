@@ -1,0 +1,113 @@
+# StaffPortal App - Apache Configuration for Hostinger
+
+# Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    # Force HTTPS (optional - uncomment if you want to force HTTPS)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # Remove trailing slashes
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [R=301,L]
+</IfModule>
+
+# Set Default Charset
+AddDefaultCharset UTF-8
+
+# MIME Types
+<IfModule mod_mime.c>
+    # HTML
+    AddType text/html .html
+    
+    # JavaScript
+    AddType application/javascript .js
+    AddType text/javascript .js
+    
+    # CSS
+    AddType text/css .css
+    
+    # JSON
+    AddType application/json .json
+    
+    # Images
+    AddType image/png .png
+    AddType image/jpeg .jpg .jpeg
+    AddType image/gif .gif
+    AddType image/svg+xml .svg
+    AddType image/x-icon .ico
+    AddType image/webp .webp
+    
+    # Fonts
+    AddType font/woff .woff
+    AddType font/woff2 .woff2
+    AddType font/ttf .ttf
+    AddType font/otf .otf
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # XSS Protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Prevent MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Enable Compression (if mod_deflate is available)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS and JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    
+    # HTML
+    ExpiresByType text/html "access plus 0 seconds"
+    
+    # JSON Data (may change frequently)
+    ExpiresByType application/json "access plus 0 seconds"
+</IfModule>
+
+# Prevent Directory Browsing
+Options -Indexes
+
+# Custom Error Pages (optional - uncomment and create error pages if needed)
+# ErrorDocument 404 /404.html
+# ErrorDocument 500 /500.html
+
+# Protect Sensitive Files (optional)
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|bak)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Allow JSON files to be accessed (needed for data files)
+<FilesMatch "\.json$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
