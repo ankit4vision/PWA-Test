@@ -258,17 +258,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
     width: 100%;
     max-width: 1200px;
     position: relative;
     margin: 0 auto;
-}
-
-.app-logo {
-    height: 32px;
-    width: auto;
-    object-fit: contain;
+    flex: 1;
 }
 
 .top-app-bar h1 {
@@ -279,6 +273,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin: 0;
+    text-align: center;
 }
 
 .btn-logout {
@@ -371,11 +366,17 @@ body:has(.event-details-page) .bottom-nav {
 /* Adjust top bar content when back button is present */
 .top-app-bar:has(.btn-back) .top-app-bar-content {
     padding-left: 3.5rem;
+    padding-right: 3.5rem;
 }
 
 /* Ensure back button doesn't break layout */
 .top-app-bar {
     position: relative;
+}
+
+/* Hide logo (removed from design) */
+.app-logo {
+    display: none;
 }
 
 /* Bottom Navigation */
