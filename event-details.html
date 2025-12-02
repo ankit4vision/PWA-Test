@@ -29,116 +29,117 @@
 
     <!-- Main Content -->
     <div class="dashboard-container event-details-page">
-        <div class="dashboard-content">
+        <div class="dashboard-content-full">
             
-            <!-- Section 1: Event Information -->
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h4 class="mb-0">Event Information</h4>
+            <!-- Event Header (Always Visible) -->
+            <div class="event-header-card">
+                <h1 class="event-title">Groove Regional Championship - Las Vegas</h1>
+                <div class="event-header-meta">
+                    <span class="event-date">
+                        <i class="bi bi-calendar-event"></i>
+                        Feb 15-17, 2025
+                    </span>
+                    <span class="event-location">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Las Vegas, NV
+                    </span>
                 </div>
-                <div class="card-body">
-                    <h2 class="mb-4 event-title">Groove Regional Championship - Las Vegas</h2>
-                    
-                    <div class="event-details-list">
-                        <div class="detail-item">
-                            <i class="bi bi-calendar-event"></i>
-                            <div>
-                                <strong>Event Date:</strong>
-                                <span>February 15, 2025 - February 17, 2025</span>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-item">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <div>
-                                <strong>Location:</strong>
-                                <span>Las Vegas, NV</span>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-item">
-                            <i class="bi bi-building"></i>
-                            <div>
-                                <strong>Venue:</strong>
-                                <span>Las Vegas Convention Center</span>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-item">
-                            <i class="bi bi-geo-alt"></i>
-                            <div>
-                                <strong>Venue Address:</strong>
-                                <a href="https://maps.google.com/?q=3150+Paradise+Rd,+Las+Vegas,+NV+89109" target="_blank" class="text-primary">
-                                    3150 Paradise Rd, Las Vegas, NV 89109
-                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-item">
-                            <i class="bi bi-clock"></i>
-                            <div>
-                                <strong>Load In:</strong>
-                                <span>February 14, 2025 at 08:00 AM</span>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-item">
-                            <i class="bi bi-link-45deg"></i>
-                            <div>
-                                <strong>Event Details:</strong>
-                                <a href="https://onebeat.com/events/groove-las-vegas-2025/details" target="_blank" class="text-primary">
-                                    View Event Details
-                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="detail-item">
-                            <i class="bi bi-camera-video"></i>
-                            <div>
-                                <strong>Livestream:</strong>
-                                <a href="https://onebeat.com/events/groove-las-vegas-2025" target="_blank" class="text-primary">
-                                    Watch Livestream
-                                    <i class="bi bi-box-arrow-up-right ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Tour Team List -->
-                    <div class="mt-4 pt-4 border-top">
-                        <h5 class="mb-3">
-                            <i class="bi bi-people-fill me-2"></i>
-                            Tour Team & Roles
-                        </h5>
-                        <div class="row g-3">
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <div class="team-member-card">
-                                    <img src="assets/img/team1.jpeg" alt="Sarah Johnson" class="team-member-avatar">
-                                    <div class="team-member-name">Sarah Johnson</div>
-                                    <div class="team-member-role">Senior Director</div>
+            </div>
+
+            <!-- Section 1: Event Information (Collapsible) -->
+            <div class="card-full accordion-item">
+                <div class="card-header-full accordion-header" data-bs-toggle="collapse" data-bs-target="#eventInfo" aria-expanded="true">
+                    <h4 class="mb-0">
+                        <i class="bi bi-info-circle me-2"></i>
+                        Event Information
+                    </h4>
+                    <i class="bi bi-chevron-down accordion-icon"></i>
+                </div>
+                <div id="eventInfo" class="collapse show accordion-collapse">
+                    <div class="card-body-full">
+                        <div class="event-details-compact">
+                            <div class="detail-row">
+                                <i class="bi bi-building"></i>
+                                <div>
+                                    <strong>Venue:</strong>
+                                    <span>Las Vegas Convention Center</span>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <div class="team-member-card">
-                                    <img src="assets/img/team2.png" alt="Michael Chen" class="team-member-avatar">
-                                    <div class="team-member-name">Michael Chen</div>
-                                    <div class="team-member-role">Judge</div>
+                            
+                            <div class="detail-row">
+                                <i class="bi bi-geo-alt"></i>
+                                <div>
+                                    <strong>Address:</strong>
+                                    <a href="https://maps.google.com/?q=3150+Paradise+Rd,+Las+Vegas,+NV+89109" target="_blank">
+                                        3150 Paradise Rd, Las Vegas, NV 89109
+                                        <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <div class="team-member-card">
-                                    <img src="assets/img/team3.png" alt="Emily Rodriguez" class="team-member-avatar">
-                                    <div class="team-member-name">Emily Rodriguez</div>
-                                    <div class="team-member-role">Videographer</div>
+                            
+                            <div class="detail-row">
+                                <i class="bi bi-clock"></i>
+                                <div>
+                                    <strong>Load In:</strong>
+                                    <span>Feb 14, 2025 at 08:00 AM</span>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <div class="team-member-card">
-                                    <img src="assets/img/team1.jpeg" alt="David Kim" class="team-member-avatar">
-                                    <div class="team-member-name">David Kim</div>
-                                    <div class="team-member-role">Event Coordinator</div>
+                            
+                            <div class="detail-row">
+                                <i class="bi bi-link-45deg"></i>
+                                <div>
+                                    <strong>Event Details:</strong>
+                                    <a href="https://onebeat.com/events/groove-las-vegas-2025/details" target="_blank">
+                                        View Details <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <i class="bi bi-camera-video"></i>
+                                <div>
+                                    <strong>Livestream:</strong>
+                                    <a href="https://onebeat.com/events/groove-las-vegas-2025" target="_blank">
+                                        Watch Livestream <i class="bi bi-box-arrow-up-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tour Team List -->
+                        <div class="team-section">
+                            <h6 class="team-section-title">
+                                <i class="bi bi-people-fill me-2"></i>
+                                Tour Team
+                            </h6>
+                            <div class="team-grid">
+                                <div class="team-member-compact">
+                                    <img src="assets/img/team1.jpeg" alt="Sarah Johnson" class="team-avatar-sm">
+                                    <div>
+                                        <div class="team-name-sm">Sarah Johnson</div>
+                                        <div class="team-role-sm">Senior Director</div>
+                                    </div>
+                                </div>
+                                <div class="team-member-compact">
+                                    <img src="assets/img/team2.png" alt="Michael Chen" class="team-avatar-sm">
+                                    <div>
+                                        <div class="team-name-sm">Michael Chen</div>
+                                        <div class="team-role-sm">Judge</div>
+                                    </div>
+                                </div>
+                                <div class="team-member-compact">
+                                    <img src="assets/img/team3.png" alt="Emily Rodriguez" class="team-avatar-sm">
+                                    <div>
+                                        <div class="team-name-sm">Emily Rodriguez</div>
+                                        <div class="team-role-sm">Videographer</div>
+                                    </div>
+                                </div>
+                                <div class="team-member-compact">
+                                    <img src="assets/img/team1.jpeg" alt="David Kim" class="team-avatar-sm">
+                                    <div>
+                                        <div class="team-name-sm">David Kim</div>
+                                        <div class="team-role-sm">Event Coordinator</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -146,43 +147,37 @@
                 </div>
             </div>
 
-            <!-- Section 2: Travel Arrangements -->
-            <div class="card mb-4">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                    <h4 class="mb-0">Travel Arrangements</h4>
-                    <span class="badge bg-success">
-                        <i class="bi bi-check-circle"></i> Travel Posted
-                    </span>
-                </div>
-                <div class="card-body">
-                    <!-- Travel Type Icons -->
-                    <div class="mb-4">
-                        <h6 class="mb-3">Travel Type:</h6>
-                        <div class="travel-types">
-                            <span class="travel-type-badge">
-                                <i class="bi bi-airplane-fill"></i>
-                                <span>Flight</span>
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- Flight Details -->
-                    <div class="travel-section">
-                        <h5 class="mb-3">
+            <!-- Section 2: Travel Arrangements (Collapsible) -->
+            <div class="card-full accordion-item">
+                <div class="card-header-full accordion-header" data-bs-toggle="collapse" data-bs-target="#travelInfo">
+                    <div>
+                        <h4 class="mb-0">
                             <i class="bi bi-airplane-fill me-2"></i>
-                            Flight Information
-                        </h5>
-                        
-                        <div class="flight-details">
-                            <div class="detail-item">
+                            Travel Arrangements
+                        </h4>
+                        <span class="badge-travel">
+                            <i class="bi bi-check-circle"></i> Posted
+                        </span>
+                    </div>
+                    <i class="bi bi-chevron-down accordion-icon"></i>
+                </div>
+                <div id="travelInfo" class="collapse accordion-collapse">
+                    <div class="card-body-full">
+                        <div class="travel-type-badge-inline">
+                            <i class="bi bi-airplane-fill"></i>
+                            <span>Flight</span>
+                        </div>
+
+                        <div class="travel-details-compact">
+                            <div class="detail-row">
                                 <i class="bi bi-ticket-perforated"></i>
                                 <div>
-                                    <strong>Confirmation Number:</strong>
+                                    <strong>Confirmation:</strong>
                                     <span class="font-monospace">DL7289ABC</span>
                                 </div>
                             </div>
                             
-                            <div class="detail-item">
+                            <div class="detail-row">
                                 <i class="bi bi-airplane"></i>
                                 <div>
                                     <strong>Airline:</strong>
@@ -191,58 +186,44 @@
                             </div>
                             
                             <!-- Main Flight -->
-                            <div class="flight-leg mb-3">
-                                <div class="flight-leg-header">
-                                    <i class="bi bi-airplane-takeoff"></i>
-                                    <strong>Main Flight</strong>
-                                </div>
-                                <div class="flight-leg-details">
-                                    <div class="flight-airport">
-                                        <div class="airport-code">JFK</div>
-                                        <div class="airport-name">John F. Kennedy International</div>
-                                        <div class="flight-time">Feb 14, 2025 at 2:30 PM</div>
+                            <div class="flight-compact">
+                                <div class="flight-label">Main Flight</div>
+                                <div class="flight-route">
+                                    <div class="airport-compact">
+                                        <div class="airport-code-sm">JFK</div>
+                                        <div class="airport-time-sm">Feb 14, 2:30 PM</div>
                                     </div>
-                                    <div class="flight-arrow">
-                                        <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                    <div class="flight-airport">
-                                        <div class="airport-code">ATL</div>
-                                        <div class="airport-name">Hartsfield-Jackson Atlanta</div>
-                                        <div class="flight-time">Feb 14, 2025 at 5:45 PM</div>
+                                    <i class="bi bi-arrow-right flight-arrow-sm"></i>
+                                    <div class="airport-compact">
+                                        <div class="airport-code-sm">ATL</div>
+                                        <div class="airport-time-sm">Feb 14, 5:45 PM</div>
                                     </div>
                                 </div>
                             </div>
                             
                             <!-- Connection Flight -->
-                            <div class="flight-leg mb-3">
-                                <div class="flight-leg-header">
-                                    <i class="bi bi-airplane"></i>
-                                    <strong>Connection Flight</strong>
-                                </div>
-                                <div class="flight-leg-details">
-                                    <div class="flight-airport">
-                                        <div class="airport-code">ATL</div>
-                                        <div class="airport-name">Hartsfield-Jackson Atlanta</div>
-                                        <div class="flight-time">Feb 14, 2025 at 6:30 PM</div>
+                            <div class="flight-compact">
+                                <div class="flight-label">Connection</div>
+                                <div class="flight-route">
+                                    <div class="airport-compact">
+                                        <div class="airport-code-sm">ATL</div>
+                                        <div class="airport-time-sm">Feb 14, 6:30 PM</div>
                                     </div>
-                                    <div class="flight-arrow">
-                                        <i class="bi bi-arrow-right"></i>
-                                    </div>
-                                    <div class="flight-airport">
-                                        <div class="airport-code">LAS</div>
-                                        <div class="airport-name">McCarran International</div>
-                                        <div class="flight-time">Feb 14, 2025 at 8:15 PM</div>
+                                    <i class="bi bi-arrow-right flight-arrow-sm"></i>
+                                    <div class="airport-compact">
+                                        <div class="airport-code-sm">LAS</div>
+                                        <div class="airport-time-sm">Feb 14, 8:15 PM</div>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="detail-item mt-3">
+                            <div class="detail-row">
                                 <i class="bi bi-info-circle"></i>
                                 <div>
-                                    <strong>Special Notes:</strong>
-                                    <div class="special-notes">
-                                        Please arrive 2 hours early. Check-in at Delta counter. 
-                                        For assistance, visit: <a href="https://delta.com/help" target="_blank">https://delta.com/help</a>
+                                    <strong>Notes:</strong>
+                                    <div class="notes-text">
+                                        Please arrive 2 hours early. 
+                                        <a href="https://delta.com/help" target="_blank">delta.com/help</a>
                                     </div>
                                 </div>
                             </div>
@@ -251,128 +232,123 @@
                 </div>
             </div>
 
-            <!-- Section 3: Hotel Information -->
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h4 class="mb-0">Hotel Information</h4>
+            <!-- Section 3: Hotel Information (Collapsible) -->
+            <div class="card-full accordion-item">
+                <div class="card-header-full accordion-header" data-bs-toggle="collapse" data-bs-target="#hotelInfo">
+                    <h4 class="mb-0">
+                        <i class="bi bi-building me-2"></i>
+                        Hotel Information
+                    </h4>
+                    <i class="bi bi-chevron-down accordion-icon"></i>
                 </div>
-                <div class="card-body">
-                    <div class="detail-item">
-                        <i class="bi bi-building"></i>
-                        <div>
-                            <strong>Hotel Name:</strong>
-                            <span>The Venetian Resort</span>
-                        </div>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <i class="bi bi-geo-alt"></i>
-                        <div>
-                            <strong>Hotel Address:</strong>
-                            <a href="https://maps.google.com/?q=3355+Las+Vegas+Blvd+S,+Las+Vegas,+NV+89109" target="_blank" class="text-primary">
-                                3355 Las Vegas Blvd S, Las Vegas, NV 89109
-                                <i class="bi bi-box-arrow-up-right ms-1"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <i class="bi bi-telephone"></i>
-                        <div>
-                            <strong>Hotel Phone:</strong>
-                            <a href="tel:+17024141000" class="text-primary">+1-702-414-1000</a>
-                        </div>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <i class="bi bi-cup-hot"></i>
-                        <div>
-                            <strong>Breakfast Hours:</strong>
-                            <span>6:00 AM - 10:00 AM</span>
-                        </div>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <i class="bi bi-door-open"></i>
-                        <div>
-                            <strong>Room Type:</strong>
-                            <span>Double Queen</span>
-                        </div>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <i class="bi bi-123"></i>
-                        <div>
-                            <strong>Room Number:</strong>
-                            <span>2045</span>
-                        </div>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <i class="bi bi-people"></i>
-                        <div>
-                            <strong>Roommates:</strong>
-                            <div class="roommate-list">
-                                <div class="roommate-item">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>Michael Chen</span>
-                                    <a href="tel:+15550124" class="text-primary ms-2">
-                                        <i class="bi bi-telephone"></i> +1-555-0124
+                <div id="hotelInfo" class="collapse accordion-collapse">
+                    <div class="card-body-full">
+                        <div class="event-details-compact">
+                            <div class="detail-row">
+                                <i class="bi bi-building"></i>
+                                <div>
+                                    <strong>Hotel:</strong>
+                                    <span>The Venetian Resort</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <i class="bi bi-geo-alt"></i>
+                                <div>
+                                    <strong>Address:</strong>
+                                    <a href="https://maps.google.com/?q=3355+Las+Vegas+Blvd+S,+Las+Vegas,+NV+89109" target="_blank">
+                                        3355 Las Vegas Blvd S, Las Vegas, NV 89109
+                                        <i class="bi bi-box-arrow-up-right ms-1"></i>
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <i class="bi bi-clock-history"></i>
-                        <div>
-                            <strong>Travel Time to Venue:</strong>
-                            <span>15 minutes</span>
+                            
+                            <div class="detail-row">
+                                <i class="bi bi-telephone"></i>
+                                <div>
+                                    <strong>Phone:</strong>
+                                    <a href="tel:+17024141000">+1-702-414-1000</a>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <i class="bi bi-cup-hot"></i>
+                                <div>
+                                    <strong>Breakfast:</strong>
+                                    <span>6:00 AM - 10:00 AM</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <i class="bi bi-door-open"></i>
+                                <div>
+                                    <strong>Room:</strong>
+                                    <span>Double Queen - Room 2045</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <i class="bi bi-people"></i>
+                                <div>
+                                    <strong>Roommate:</strong>
+                                    <div class="roommate-compact">
+                                        <span>Michael Chen</span>
+                                        <a href="tel:+15550124" class="text-primary ms-2">
+                                            <i class="bi bi-telephone"></i> +1-555-0124
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-row">
+                                <i class="bi bi-clock-history"></i>
+                                <div>
+                                    <strong>Travel Time:</strong>
+                                    <span>15 minutes to venue</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Section 4: Food & Catering Menu -->
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h4 class="mb-0">Food & Catering Menu</h4>
+            <!-- Section 4: Food & Catering (Collapsible) -->
+            <div class="card-full accordion-item">
+                <div class="card-header-full accordion-header" data-bs-toggle="collapse" data-bs-target="#foodInfo">
+                    <h4 class="mb-0">
+                        <i class="bi bi-utensils me-2"></i>
+                        Food & Catering
+                    </h4>
+                    <i class="bi bi-chevron-down accordion-icon"></i>
                 </div>
-                <div class="card-body">
-                    <!-- Food Notes (All Users) -->
-                    <div class="food-section mb-4">
-                        <h5 class="mb-3">
-                            <i class="bi bi-utensils me-2"></i>
-                            Food Notes
-                        </h5>
-                        <div class="food-content">
-                            <h3>Meal Schedule</h3>
-                            <p><strong>Breakfast:</strong> 7:00 AM - 9:00 AM<br>
-                            <strong>Lunch:</strong> 12:00 PM - 2:00 PM<br>
-                            <strong>Dinner:</strong> 6:00 PM - 8:00 PM</p>
-                            <p>All meals will be served in the main dining area. Vegetarian and vegan options available.</p>
-                        </div>
-                        <div class="mt-3">
-                            <a href="https://onebeat.com/menus/groove-las-vegas-2025" target="_blank" class="btn btn-primary">
+                <div id="foodInfo" class="collapse accordion-collapse">
+                    <div class="card-body-full">
+                        <!-- Food Notes (All Users) -->
+                        <div class="food-section-compact">
+                            <h6 class="food-section-title">
+                                <i class="bi bi-utensils me-2"></i>
+                                Food Notes
+                            </h6>
+                            <div class="food-content-compact">
+                                <p><strong>Breakfast:</strong> 7:00 AM - 9:00 AM | <strong>Lunch:</strong> 12:00 PM - 2:00 PM | <strong>Dinner:</strong> 6:00 PM - 8:00 PM</p>
+                                <p class="text-muted small">All meals in main dining area. Vegetarian and vegan options available.</p>
+                            </div>
+                            <a href="https://onebeat.com/menus/groove-las-vegas-2025" target="_blank" class="btn btn-primary btn-sm">
                                 <i class="bi bi-link-45deg"></i> View Full Menu
                             </a>
                         </div>
-                    </div>
-                    
-                    <!-- Director Food Notes (Director + Event Coordinator only) -->
-                    <div class="food-section border-top pt-4">
-                        <h5 class="mb-3">
-                            <i class="bi bi-star-fill me-2"></i>
-                            Director's Food Notes
-                            <span class="badge bg-primary-custom ms-2">Director Only</span>
-                        </h5>
-                        <div class="food-content">
-                            <h3>Director's Lounge Menu</h3>
-                            <p>Special catering available in the Director's Lounge from 8:00 AM - 10:00 PM. Includes premium coffee, snacks, and light meals.</p>
-                        </div>
-                        <div class="mt-3">
-                            <a href="https://onebeat.com/menus/directors-lounge-las-vegas-2025" target="_blank" class="btn btn-primary">
+                        
+                        <!-- Director Food Notes -->
+                        <div class="food-section-compact border-top mt-3 pt-3">
+                            <h6 class="food-section-title">
+                                <i class="bi bi-star-fill me-2"></i>
+                                Director's Food Notes
+                                <span class="badge bg-primary-custom ms-2">Director Only</span>
+                            </h6>
+                            <div class="food-content-compact">
+                                <p>Special catering in Director's Lounge from 8:00 AM - 10:00 PM. Premium coffee, snacks, and light meals.</p>
+                            </div>
+                            <a href="https://onebeat.com/menus/directors-lounge-las-vegas-2025" target="_blank" class="btn btn-primary btn-sm">
                                 <i class="bi bi-link-45deg"></i> View Director's Menu
                             </a>
                         </div>

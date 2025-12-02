@@ -348,11 +348,18 @@ body {
 /* Event Details Page - Hide Bottom Nav */
 .event-details-page.dashboard-container {
     padding-bottom: 1.5rem;
+    padding-top: 56px;
 }
 
 .event-details-page .bottom-nav,
 body:has(.event-details-page) .bottom-nav {
     display: none !important;
+}
+
+/* Override dashboard-content max-width for event details */
+.event-details-page .dashboard-content {
+    max-width: 100%;
+    padding: 0;
 }
 
 /* Adjust top bar content when back button is present */
@@ -1598,5 +1605,414 @@ body:has(.event-details-page) .bottom-nav {
     background: var(--gradient-primary);
     background-size: 200% 200%;
     animation: gradientShift 3s ease infinite;
+}
+
+/* ============================================
+   Event Details Page - Full Width Redesign
+   ============================================ */
+
+/* Full Width Dashboard Content for Event Details */
+.dashboard-content-full {
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Event Header Card */
+.event-header-card {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1.5rem 1.25rem;
+    margin-bottom: 0.75rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.event-header-card .event-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: white;
+    background: none;
+    -webkit-text-fill-color: white;
+}
+
+.event-header-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+.event-header-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.event-header-meta i {
+    font-size: 1rem;
+}
+
+/* Full Width Cards */
+.card-full {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0.5rem;
+    background: var(--card-bg);
+    border-top: 1px solid rgba(139, 92, 246, 0.1);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card-full:first-of-type {
+    border-top: none;
+}
+
+.card-full:hover {
+    background: var(--card-bg-hover);
+}
+
+.card-header-full {
+    background: var(--card-bg);
+    border: none;
+    padding: 1.25rem 1.25rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.card-header-full:hover {
+    background: rgba(139, 92, 246, 0.05);
+}
+
+.card-header-full h4 {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.card-header-full > div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.accordion-header[aria-expanded="true"] .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.card-body-full {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+/* Compact Detail Rows */
+.event-details-compact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.detail-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(139, 92, 246, 0.08);
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row i {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    width: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.detail-row > div {
+    flex: 1;
+    font-size: 0.95rem;
+}
+
+.detail-row strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.detail-row span,
+.detail-row a {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.detail-row a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.detail-row a:hover {
+    text-decoration: underline;
+}
+
+/* Compact Team Section */
+.team-section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.team-section-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.team-member-compact {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: rgba(139, 92, 246, 0.05);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+.team-avatar-sm {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    flex-shrink: 0;
+}
+
+.team-name-sm {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
+}
+
+.team-role-sm {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Travel Details Compact */
+.travel-details-compact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.travel-type-badge-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(139, 92, 246, 0.1);
+    border-radius: var(--border-radius-sm);
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.badge-travel {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--success-color);
+    color: white;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Flight Compact */
+.flight-compact {
+    padding: 0.75rem;
+    background: rgba(139, 92, 246, 0.03);
+    border-radius: var(--border-radius-sm);
+    margin-top: 0.5rem;
+}
+
+.flight-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.flight-route {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.airport-compact {
+    flex: 1;
+    text-align: center;
+}
+
+.airport-code-sm {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.airport-time-sm {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.flight-arrow-sm {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.notes-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+    line-height: 1.5;
+}
+
+.notes-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.notes-text a:hover {
+    text-decoration: underline;
+}
+
+/* Roommate Compact */
+.roommate-compact {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Food Section Compact */
+.food-section-compact {
+    margin-bottom: 1rem;
+}
+
+.food-section-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.food-content-compact {
+    margin-bottom: 0.75rem;
+}
+
+.food-content-compact p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.food-content-compact .text-muted {
+    font-size: 0.85rem;
+}
+
+/* Accordion Animation */
+.accordion-collapse {
+    transition: all 0.3s ease;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .event-header-card {
+        padding: 2rem 2rem;
+    }
+    
+    .event-header-card .event-title {
+        font-size: 2rem;
+    }
+    
+    .card-header-full {
+        padding: 1.5rem 2rem;
+    }
+    
+    .card-body-full {
+        padding: 0 2rem 1.5rem 2rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .detail-row {
+        padding: 0.875rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dashboard-content-full {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .card-full {
+        border-radius: var(--border-radius);
+        margin-bottom: 1rem;
+        border: 1px solid rgba(139, 92, 246, 0.1);
+        box-shadow: var(--shadow);
+    }
+    
+    .card-full:first-of-type {
+        border-top: 1px solid rgba(139, 92, 246, 0.1);
+    }
 }
 
