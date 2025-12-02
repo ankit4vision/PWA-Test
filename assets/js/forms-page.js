@@ -97,11 +97,11 @@ class FormsPage {
                     <i class="bi bi-file-earmark-text-fill gradient-text me-2"></i>
                     Generic Forms
                 </h4>
-                <div class="row g-2">
+                <div class="forms-list-vertical">
         `;
 
         this.generalForms.forEach(form => {
-            html += this.renderFormButton(form);
+            html += this.renderFormListItem(form);
         });
 
         html += `
@@ -122,11 +122,11 @@ class FormsPage {
                     <i class="bi bi-briefcase-fill gradient-text me-2"></i>
                     Department Forms
                 </h4>
-                <div class="row g-2">
+                <div class="forms-list-vertical">
         `;
 
         this.departmentForms.forEach(form => {
-            html += this.renderFormButton(form);
+            html += this.renderFormListItem(form);
         });
 
         html += `
@@ -138,43 +138,35 @@ class FormsPage {
     }
 
     /**
-     * Render individual form button
+     * Render individual form list item (vertical list view with icon, label, link)
      */
-    renderFormButton(form) {
-        const icon = form.icon || 'file-earmark-text';
+    renderFormListItem(form) {
         const title = form.title || 'Form';
-        const description = form.description || '';
         const url = form.url || '#';
 
         return `
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="form-list-item">
+                <i class="bi bi-file-earmark-text form-list-icon"></i>
+                <span class="form-list-label">${title}</span>
                 <a href="${url}" 
-                   class="form-button text-decoration-none"
+                   class="form-list-link"
                    data-form-id="${form.id}">
-                    <div class="card h-100 form-card">
-                        <div class="card-body d-flex flex-column align-items-center justify-content-center p-4 text-center">
-                            <div class="form-icon mb-3">
-                                <i class="bi bi-${icon}"></i>
-                            </div>
-                            <h6 class="card-title mb-2 fw-bold">${title}</h6>
-                            ${description ? `<p class="card-text text-muted small mb-0">${description}</p>` : ''}
-                        </div>
-                    </div>
+                    <i class="bi bi-box-arrow-up-right"></i>
                 </a>
             </div>
         `;
     }
 
     /**
-     * Attach event handlers to form buttons
+     * Attach event handlers to form list items
      */
     attachFormHandlers() {
-        document.querySelectorAll('.form-button').forEach(button => {
-            button.addEventListener('click', (e) => {
+        document.querySelectorAll('.form-list-link').forEach(link => {
+            link.addEventListener('click', (e) => {
                 e.preventDefault();
-                const url = button.getAttribute('href');
-                const formId = button.getAttribute('data-form-id');
-                const formTitle = button.querySelector('.card-title')?.textContent || 'Form';
+                const url = link.getAttribute('href');
+                const formId = link.getAttribute('data-form-id');
+                const formTitle = link.closest('.form-list-item')?.querySelector('.form-list-label')?.textContent?.trim() || 'Form';
                 
                 if (url && url !== '#') {
                     // Forms should open inside the app using a modal with iframe
