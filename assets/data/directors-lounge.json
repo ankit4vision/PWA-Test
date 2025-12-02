@@ -5,7 +5,7 @@
       "crewMembers": [
         {
           "userId": 1,
-          "profilePicture": "https://via.placeholder.com/150",
+          "profilePicture": "assets/img/team1.jpeg",
           "legalName": "Sarah Johnson",
           "roles": ["Senior Director", "Director"],
           "phone": "+1-555-0123",
@@ -13,7 +13,7 @@
         },
         {
           "userId": 2,
-          "profilePicture": "https://via.placeholder.com/150",
+          "profilePicture": "assets/img/team2.png",
           "legalName": "Michael Chen",
           "roles": ["Head Judge", "Master Class Teacher"],
           "phone": "+1-555-0124",
@@ -21,7 +21,7 @@
         },
         {
           "userId": 3,
-          "profilePicture": "https://via.placeholder.com/150",
+          "profilePicture": "assets/img/team3.png",
           "legalName": "Emily Rodriguez",
           "roles": ["Videographer"],
           "phone": "+1-555-0125",
@@ -29,7 +29,7 @@
         },
         {
           "userId": 4,
-          "profilePicture": "https://via.placeholder.com/150",
+          "profilePicture": "assets/img/team1.jpeg",
           "legalName": "David Kim",
           "roles": ["Merch"],
           "phone": "+1-555-0126",
