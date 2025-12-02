@@ -2472,3 +2472,87 @@ h4.fw-bold .gradient-text {
     }
 }
 
+/* Form Modal Styles - Forms open inside the app */
+.form-modal-header {
+    background: var(--gradient-primary);
+    color: white;
+    border-bottom: none;
+    padding: 1rem 1.25rem;
+    position: sticky;
+    top: 0;
+    z-index: 1055;
+}
+
+.form-modal-header .modal-title {
+    color: white;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+}
+
+.form-modal-header .gradient-text {
+    -webkit-text-fill-color: white;
+    background: none;
+    color: white;
+}
+
+.form-modal-header .btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+    opacity: 0.9;
+}
+
+.form-modal-header .btn-close-white:hover {
+    opacity: 1;
+}
+
+.form-modal-body {
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.form-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    background: white;
+}
+
+/* Full-screen modal adjustments */
+.modal-fullscreen .modal-content {
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+}
+
+.modal-fullscreen .modal-body {
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}
+
+/* Mobile-specific adjustments for form modal */
+@media (max-width: 767.98px) {
+    .form-modal-header {
+        padding: 0.75rem 1rem;
+    }
+    
+    .form-modal-header .modal-title {
+        font-size: 1rem;
+    }
+    
+    .form-modal-body {
+        height: calc(100vh - 56px);
+    }
+    
+    .modal-fullscreen .modal-body {
+        height: calc(100vh - 56px);
+    }
+}
+
+/* Ensure modal backdrop is visible */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+}
+

@@ -171,16 +171,80 @@ class FormsPage {
     attachFormHandlers() {
         document.querySelectorAll('.form-button').forEach(button => {
             button.addEventListener('click', (e) => {
+                e.preventDefault();
                 const url = button.getAttribute('href');
+                const formId = button.getAttribute('data-form-id');
+                const formTitle = button.querySelector('.card-title')?.textContent || 'Form';
+                
                 if (url && url !== '#') {
-                    // Forms should open inside the app (not in new tab like resources)
-                    // We'll open in the same window/tab
-                    e.preventDefault();
-                    window.location.href = url;
-                    console.log('Opening form:', url);
+                    // Forms should open inside the app using a modal with iframe
+                    this.openFormInModal(url, formTitle, formId);
                 }
             });
         });
+    }
+
+    /**
+     * Open form in a modal overlay (inside the app)
+     */
+    openFormInModal(url, title, formId) {
+        // Create modal HTML
+        const modalId = `formModal-${formId}`;
+        const modalHTML = `
+            <div class="modal fade" id="${modalId}" tabindex="-1" aria-labelledby="${modalId}Label" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header form-modal-header">
+                            <h5 class="modal-title fw-bold" id="${modalId}Label">
+                                <i class="bi bi-file-earmark-text-fill gradient-text me-2"></i>
+                                ${title}
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body form-modal-body p-0">
+                            <iframe 
+                                src="${url}" 
+                                class="form-iframe"
+                                frameborder="0"
+                                allow="camera; microphone; geolocation"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // Remove existing modal if any
+        const existingModal = document.getElementById(modalId);
+        if (existingModal) {
+            existingModal.remove();
+        }
+
+        // Add modal to body
+        document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+        // Initialize and show Bootstrap modal
+        const modalElement = document.getElementById(modalId);
+        const modal = new bootstrap.Modal(modalElement, {
+            backdrop: 'static',
+            keyboard: false
+        });
+        
+        modal.show();
+
+        // Clean up when modal is closed
+        modalElement.addEventListener('hidden.bs.modal', function() {
+            modalElement.remove();
+        });
+
+        // Handle iframe load
+        const iframe = modalElement.querySelector('.form-iframe');
+        iframe.addEventListener('load', function() {
+            console.log('Form loaded:', url);
+        });
+
+        console.log('Opening form in modal:', url);
     }
 }
 
