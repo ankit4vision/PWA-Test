@@ -3,14 +3,14 @@
     {
       "id": 1,
       "title": "Broken/Missing Items Form",
-      "url": "https://onebeat.com/forms/broken-items",
+      "url": "https://forms.office.com/r/qJmzPNDUzM",
       "icon": "exclamation-circle",
       "description": "Report broken or missing equipment"
     },
     {
       "id": 2,
       "title": "Travel Opt-Out Form",
-      "url": "https://onebeat.com/forms/travel-opt-out",
+      "url": "https://forms.office.com/r/qJmzPNDUzM",
       "icon": "x-circle",
       "description": "Opt out of provided travel arrangements"
     },
@@ -28,7 +28,7 @@
         "id": 201,
         "title": "Director Forms",
         "category": "Director",
-        "url": "https://onebeat.com/forms/director",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "person-badge",
         "description": "Director-specific forms"
       },
@@ -36,7 +36,7 @@
         "id": 202,
         "title": "Scorekeeper/Tabulator Forms",
         "category": "Scorekeeper/Tabulator",
-        "url": "https://onebeat.com/forms/scorekeeper-tabulator",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "calculator",
         "description": "Scorekeeping and tabulation forms"
       },
@@ -44,7 +44,7 @@
         "id": 203,
         "title": "CP Forms",
         "category": "Content Producer",
-        "url": "https://onebeat.com/forms/content-producer",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "film",
         "description": "Content producer forms"
       },
@@ -52,7 +52,7 @@
         "id": 204,
         "title": "Backstage Forms",
         "category": "Backstage",
-        "url": "https://onebeat.com/forms/backstage",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "theater",
         "description": "Backstage operations forms"
       },
@@ -60,7 +60,7 @@
         "id": 205,
         "title": "Merch Forms",
         "category": "Merch",
-        "url": "https://onebeat.com/forms/merch",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "bag",
         "description": "Merchandise inventory and sales forms"
       }
@@ -70,7 +70,7 @@
         "id": 206,
         "title": "Faculty Forms",
         "category": "Faculty",
-        "url": "https://onebeat.com/forms/faculty",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "people",
         "description": "Faculty-specific forms"
       }
@@ -80,7 +80,7 @@
         "id": 202,
         "title": "Scorekeeper/Tabulator Forms",
         "category": "Scorekeeper/Tabulator",
-        "url": "https://onebeat.com/forms/scorekeeper-tabulator",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "calculator",
         "description": "Scorekeeping and tabulation forms"
       }
@@ -90,7 +90,7 @@
         "id": 202,
         "title": "Scorekeeper/Tabulator Forms",
         "category": "Scorekeeper/Tabulator",
-        "url": "https://onebeat.com/forms/scorekeeper-tabulator",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "calculator",
         "description": "Scorekeeping and tabulation forms"
       }
@@ -100,7 +100,7 @@
         "id": 203,
         "title": "CP Forms",
         "category": "Content Producer",
-        "url": "https://onebeat.com/forms/content-producer",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "film",
         "description": "Content producer forms"
       }
@@ -110,7 +110,7 @@
         "id": 204,
         "title": "Backstage Forms",
         "category": "Backstage",
-        "url": "https://onebeat.com/forms/backstage",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "theater",
         "description": "Backstage operations forms"
       }
@@ -120,7 +120,7 @@
         "id": 205,
         "title": "Merch Forms",
         "category": "Merch",
-        "url": "https://onebeat.com/forms/merch",
+        "url": "https://forms.office.com/r/qJmzPNDUzM",
         "icon": "bag",
         "description": "Merchandise inventory and sales forms"
       }
