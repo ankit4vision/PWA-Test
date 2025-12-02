@@ -112,10 +112,10 @@ A mobile-first web application for OneBeat staff members to manage events, trave
 ### Phase 4: Module 3 - My Forms
 - ✅ **General Forms Section** - Implemented with:
   - Header: "Generic Forms" with icon
-  - Card-based form display with icons
+  - Vertical list view with icon, label, and link button
   - All users (Director, Judge, Tour Team) have access
-  - Forms: Broken/Missing Items Form, Travel Opt-Out Form, Ideas Form
-  - Opens forms inside app (same window navigation)
+  - Forms: Broken/Missing Items Form, Travel Opt-Out Form, Anonymous Feedback
+  - Opens forms inside app using full-screen modal with iframe
 - ✅ **Department Forms Section** - Implemented with:
   - Header: "Department Forms" with icon
   - Role-based form filtering:
@@ -123,26 +123,26 @@ A mobile-first web application for OneBeat staff members to manage events, trave
     - Judge: Sees ONLY Faculty Forms
     - Tour Team: Sees ONLY their specific role forms
   - Multiple role support: Collects forms from all user roles
-- ✅ **Form Categories** - All implemented with icons:
+- ✅ **Form Categories** - All implemented:
   - Director Forms
   - Faculty Forms (Judge only)
   - Scorekeeper/Tabulator Forms
   - CP Forms
   - Backstage Forms
   - Merch Forms
-- ✅ **Form Card Design** - Completed:
-  - Clickable card design (entire card is clickable)
-  - Icon display with hover effects
-  - Title and description
-  - Opens URL in same window (inside app)
-  - Responsive grid layout (1 column mobile, 2 tablet, 3 desktop)
+- ✅ **Form List Design** - Completed:
+  - Vertical list view (compact and scalable)
+  - Each item: Default icon + Label + Link button
+  - Clean card container with separators
+  - Hover effects on rows and buttons
+  - Opens forms in full-screen modal with iframe (inside app)
   - Section separator between General and Department forms
-  - Optimized spacing between cards
+  - Responsive design (mobile and tablet optimized)
 
 ### Next Steps
 - ✅ **Event Details Page** - Completed with full functionality and enhanced UI
 - ✅ **Module 2: My Resources** - Completed with role-based filtering and card design
-- ✅ **Module 3: My Forms** - Completed with role-based filtering and card design
+- ✅ **Module 3: My Forms** - Completed with role-based filtering, vertical list view, and modal integration
 - ⏭️ **Module 4: Contact Us** - Contact information with role-based visibility
 
 ---
@@ -399,10 +399,11 @@ A mobile-first web application for OneBeat staff members to manage events, trave
 - [x] **Form Links** (all users) ✅
   - Broken/Missing Items Form
   - Travel Opt-Out Form
-  - Ideas Form
+  - Anonymous Feedback
 - [x] **Form Display** ✅
-  - Button-style links (card-based design)
-  - Opens forms inside app (same window navigation)
+  - Vertical list view (compact and scalable)
+  - Each item: Default icon + Label + Link button
+  - Opens forms inside app using full-screen modal with iframe
 
 ### 4.2 Department Forms Section
 - [x] **Header: "Department Forms"** ✅
@@ -419,6 +420,20 @@ A mobile-first web application for OneBeat staff members to manage events, trave
   - CP Forms
   - Backstage Forms
   - Merch Forms
+
+### 4.3 Form Modal & UI
+- [x] **Full-Screen Modal** ✅
+  - Opens forms in modal overlay (inside app)
+  - Iframe embedding for external forms (Microsoft Forms, etc.)
+  - Sticky header with form title and close button
+  - Mobile-optimized full-screen experience
+- [x] **List View Design** ✅
+  - Vertical list with clean separators
+  - Default icon (file-earmark-text) for all forms
+  - Label (form title) in center
+  - Link button with hover effects
+  - Card container with rounded borders
+  - Responsive spacing and typography
 
 ---
 
